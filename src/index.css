@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-stone-50 font-sans text-brand-900 antialiased;
+    background-image:
+      radial-gradient(circle at top left, rgba(154, 103, 66, 0.12), transparent 28%),
+      linear-gradient(180deg, #f9f7f3 0%, #f5f0e8 45%, #efe8de 100%);
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-[min(100%-1.5rem,80rem)] md:w-[min(100%-2.5rem,80rem)];
+  }
+
+  .panel {
+    @apply rounded-[2rem] border border-white/60 bg-white/70 shadow-soft backdrop-blur;
+  }
+
+  .section-title {
+    @apply font-display text-4xl leading-none text-brand-900 md:text-5xl;
+  }
+
+  .pill-button {
+    @apply inline-flex items-center justify-center rounded-full border border-brand-900/10 bg-white/80 px-5 py-3 text-sm font-semibold text-brand-900 transition hover:-translate-y-0.5 hover:border-brand-900/20;
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center rounded-full bg-brand-900 px-6 py-3 text-sm font-semibold text-stone-50 transition hover:-translate-y-0.5 hover:bg-brand-800;
+  }
+}
