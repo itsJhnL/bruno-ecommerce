@@ -3,15 +3,24 @@
 # None of this is imported by the application, but Vercel uploads every file in
 # the repository unless told otherwise — and `supabase/` alone is ~250 KB of SQL
 # that would sit in a serverless bundle doing nothing.
+#
+# EVERY PATTERN HERE MUST START WITH "/".
+#
+# This file uses .gitignore semantics, where an unanchored `supabase/` matches a
+# directory of that name AT ANY DEPTH. Written without the leading slash it also
+# deleted `lib/supabase/` — the Supabase clients the whole app imports — and the
+# build died with "Can't resolve '@/lib/supabase/server'". The upload log is how
+# you check this: it prints "Removed N ignored files", and N must equal the file
+# count of the directories listed below and nothing more.
 
-legacy/
-supabase/
-scripts/
-docs/
-Claude outputs/
+/legacy/
+/supabase/
+/scripts/
+/docs/
+/Claude outputs/
 
-Agents.md
-Design.md
-Goals.md
-Memory.md
-PRD.md
+/Agents.md
+/Design.md
+/Goals.md
+/Memory.md
+/PRD.md
