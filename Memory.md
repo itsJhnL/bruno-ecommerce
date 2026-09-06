@@ -36,6 +36,28 @@ Append-only. Newest entries at the top. Every agent reads this first and updates
 
 ## Decisions
 
+### D-040 · Vercel kept building the app this repo used to be — 2026-09-06
+The deploy failed with `sh: line 1: vite: command not found` / `Command "vite build"
+exited with 127`. Nothing in the repository asks for Vite: the root `package.json` builds
+with `next build`, has no Vite dependency, and the only Vite file left is
+`legacy/vite.config.js`, which `.vercelignore` excludes anyway.
+
+**Cause:** the Vercel project was created when this repo *was* the Vite SPA (commit
+`e88a5e3`). Framework Preset and Build Command were saved against the project then, and a
+saved project setting beats auto-detection — so a year-old dashboard field was still
+driving the build.
+
+`vercel.json` now pins `framework: nextjs` and `buildCommand: next build`, which override
+the dashboard. **`outputDirectory` is deliberately omitted**: setting it on a Next.js
+project makes Vercel serve a static directory and breaks every server route. That means a
+stale `dist` output-directory override is *not* fixed by this file and still has to be
+cleared by hand — recorded in README so the next person does not assume the JSON covers
+everything.
+
+**Worth remembering:** when a build fails with a command nobody in the repo wrote, look
+outside the repo. Grepping the source for "vite" would have found only an archived file
+and proved nothing.
+
 ### D-038 · A `loading.tsx` at the root turned every 404 into a soft 404 — 2026-09-06
 In production, `/product/anything-missing` returned **HTTP 200** with a page that said
 "404". Same for missing categories, journal entries and CMS pages. A path matching no

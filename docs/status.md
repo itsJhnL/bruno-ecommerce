@@ -40,6 +40,7 @@ These were checked by running them, not by reading them.
 | **40 routes checked for HTTP status** (`npm run test:http`) | ✅ all correct — including that missing products/categories/articles/pages return **404, not a soft 404** |
 | Horizontal overflow at 375 / 414 / 768 / 1024 px | ✅ `scrollWidth` equals the viewport on every storefront page, measured over the DevTools Protocol |
 | Cart pricing against the **live** Supabase project | ✅ subtotal, shipping, coupons and totals all correct on real data |
+| **Deployment rehearsal**: tracked files only, `.vercelignore` applied, fresh `npm ci`, no env vars | ✅ builds 42 routes and passes all 40 route checks — proves nothing the build needs is excluded from the upload |
 | `/account` with no session | ✅ redirects to `/login?next=/account` |
 | `app/favicon.ico` | ✅ real multi-image ICO (16/32/48), verified by file signature — previously a 200 serving Next's HTML 404 |
 | Open Graph cards | ✅ 21 PNGs at 1200x630, verified as `PNG image data, 1200 x 630` |

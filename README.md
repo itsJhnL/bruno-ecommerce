@@ -125,6 +125,28 @@ into a Client Component fails the build rather than leaking it.
 **Before launch**, replace the demo contact details in `site_settings` — the footer
 currently shows `clientcare@bruno.example.com`, seeded from `site.email`.
 
+### If the build runs `vite build`
+
+This repository began life as a Vite SPA (commit `e88a5e3`, now archived under
+`legacy/`). A Vercel project created back then still has **Framework Preset: Vite** and
+**Build Command: `vite build`** saved against it, and a saved project setting beats
+auto-detection — so it keeps running Vite against a Next.js repo and fails with
+`vite: command not found`.
+
+`vercel.json` now pins `framework` and `buildCommand`, which overrides the dashboard for
+those two. **Clear the rest by hand**, because they are not pinned:
+
+> Project -> Settings -> Build and Deployment -> Build & Development Settings
+>
+> - Framework Preset -> **Next.js**
+> - Build Command -> turn the override **off**
+> - Output Directory -> turn the override **off** (if it says `dist`, that is the Vite
+>   leftover and it will break the deploy on its own)
+> - Install Command -> turn the override **off**
+
+`outputDirectory` is deliberately *not* in `vercel.json`: setting it on a Next.js project
+switches Vercel to serving a static directory and breaks the server routes.
+
 ---
 
 ## Scripts
