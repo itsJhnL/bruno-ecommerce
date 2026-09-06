@@ -36,7 +36,65 @@ Append-only. Newest entries at the top. Every agent reads this first and updates
 
 ## Decisions
 
+### D-042 · `.vercelignore` uses .gitignore semantics, so `supabase/` also ate `lib/supabase/` — 2026-09-06
+With D-041 fixed, the build finally reached our code and died on
+`Module not found: Can't resolve '@/lib/supabase/server'` (also `/config`, `/admin`).
+The five files exist, are committed, and have matching case.
+
+**Cause:** `.vercelignore` is matched with `.gitignore` semantics, where a pattern with
+no leading slash matches a directory of that name **at any depth**. `supabase/` was
+written to exclude the root SQL directory; it also excluded `lib/supabase/` — the five
+Supabase clients the entire application imports.
+
+**The arithmetic was in the log the whole time.** Vercel printed
+`Removed 64 ignored files` (it truncates the list to 10, which is why this hid). The four
+intended directories plus five markdown files are 59 files. The missing 5 were exactly
+`lib/supabase/{admin,client,config,middleware,server}.ts`. Every pattern is now anchored
+with a leading `/`, and the log now prints `Removed 59`.
+
+**How it was proven rather than guessed:** `git ls-files --cached --ignored
+--exclude-from=<file>` uses the same matcher. Unanchored → 64 files; anchored → 59; the
+difference is precisely those five. A count in a build log is a testable claim.
+
+**Worth remembering:** a directory name that appears at two depths is the dangerous case,
+and `lib/<service>/` mirroring a root `<service>/` directory is a normal layout. Anchor
+ignore patterns by default.
+
+### D-041 · The real cause of every Vercel failure: Root Directory was still `legacy` — 2026-09-06
+The site returned HTTP 404 on every route while `/_next/static/**` served 200 and our
+`next.config.mjs` security headers were present. Local rehearsals of the deployment built
+42 routes and passed all 40 route checks, so nothing in the repository was wrong.
+
+**Cause:** the Vercel project's **Root Directory** was set to `legacy` — left from when
+this repo was the Vite SPA. Vercel built inside `legacy/`, which `.vercelignore` empties,
+so Next.js found no `app/` directory. It did not error; it emitted a single synthetic
+Pages-Router `/404`, which is why the build reported success and the whole site 404'd.
+`public/` was equally absent, which is why `/images/og/default.png` 404'd while
+`_next/static` assets served — the strongest clue, and the one that ruled out the repo.
+
+This also **supersedes the cause given in D-040**: `vite build` was never a stale saved
+Build Command. `legacy/package.json` literally contains `"build": "vite build"`, and
+Vercel ran it because the Root Directory pointed there. One wrong setting produced both
+failures.
+
+**Fixed with** `vercel project update bruno-ecommerce --auto-detect root-directory`,
+reversible with `--root-directory legacy`. Framework preset was already `nextjs`; build,
+install and output commands were all `null`, i.e. auto — so `vercel.json` (D-040) was
+never the problem and the feared stale `dist` override did not exist.
+
+**Worth remembering:** the CLI can read and write the settings the dashboard shows —
+`vercel link`, then `vercel pull` writes them into `.vercel/project.json`, and
+`vercel inspect --logs <url>` retrieves any build log. Two sessions were spent inferring
+dashboard state from HTTP responses when one command would have printed it. When the
+evidence says "not the repository", go and read the platform's own configuration instead
+of theorising about it.
+
 ### D-040 · Vercel kept building the app this repo used to be — 2026-09-06
+**Cause corrected by D-041** — the `vite build` command came from the Root Directory
+being set to `legacy`, not from a stale saved Build Command. The `vercel.json` added here
+is harmless and still pins the framework, but it was not the fix. The paragraphs below
+record what was believed at the time.
+
 The deploy failed with `sh: line 1: vite: command not found` / `Command "vite build"
 exited with 127`. Nothing in the repository asks for Vite: the root `package.json` builds
 with `next build`, has no Vite dependency, and the only Vite file left is

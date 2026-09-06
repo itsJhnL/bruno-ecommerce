@@ -125,27 +125,69 @@ into a Client Component fails the build rather than leaking it.
 **Before launch**, replace the demo contact details in `site_settings` — the footer
 currently shows `clientcare@bruno.example.com`, seeded from `site.email`.
 
-### If the build runs `vite build`
+### If the deploy 404s on every route, or runs `vite build`
 
-This repository began life as a Vite SPA (commit `e88a5e3`, now archived under
-`legacy/`). A Vercel project created back then still has **Framework Preset: Vite** and
-**Build Command: `vite build`** saved against it, and a saved project setting beats
-auto-detection — so it keeps running Vite against a Next.js repo and fails with
-`vite: command not found`.
+Both symptoms had **one** cause: this repository began life as a Vite SPA (commit
+`e88a5e3`, now archived under `legacy/`), and the Vercel project still had
+**Root Directory: `legacy`** saved against it.
 
-`vercel.json` now pins `framework` and `buildCommand`, which overrides the dashboard for
-those two. **Clear the rest by hand**, because they are not pinned:
+That single setting produced both failures. Vercel built inside `legacy/`, whose
+`package.json` really does say `"build": "vite build"` — hence `vite: command not found`.
+Once `vercel.json` forced `next build`, Vercel ran it inside `legacy/`, which
+`.vercelignore` empties. Next.js found no `app/` directory, **did not error**, emitted a
+single synthetic Pages-Router `/404`, and reported a successful build. Every route then
+404'd while `/_next/static/**` still served 200.
 
-> Project -> Settings -> Build and Deployment -> Build & Development Settings
->
-> - Framework Preset -> **Next.js**
-> - Build Command -> turn the override **off**
-> - Output Directory -> turn the override **off** (if it says `dist`, that is the Vite
->   leftover and it will break the deploy on its own)
-> - Install Command -> turn the override **off**
+Read the setting rather than guessing at it:
 
-`outputDirectory` is deliberately *not* in `vercel.json`: setting it on a Next.js project
-switches Vercel to serving a static directory and breaks the server routes.
+```bash
+vercel link --yes --project <project>
+vercel pull --yes --environment production
+node -e "console.log(require('./.vercel/project.json').settings)"
+```
+
+and fix it with:
+
+```bash
+vercel project update <project> --auto-detect root-directory
+```
+
+`--auto-detect` also accepts `build-command`, `install-command`, `output-directory` and
+`dev-command`. **Never set an Output Directory on a Next.js project** — it switches
+Vercel to serving a static directory and breaks every server route, which is why
+`vercel.json` pins `framework` and `buildCommand` but deliberately omits
+`outputDirectory`.
+
+### Reading a failed deploy without the dashboard
+
+`vercel inspect --logs <deployment-url>` prints the whole build log, and the route table
+at the end is the fastest check that the build is real. A healthy build of this repo
+prints a `Route (app)` table of 42 entries. A build that prints only
+
+```
+Route (pages)
+─ ○ /404
+```
+
+did not find the application at all.
+
+The log line `Removed N ignored files defined in .vercelignore` is also worth reading:
+Vercel truncates the list to 10 entries, so the **count** is the only complete signal.
+For this repo it must be **59**. It was once 64, and the extra five were
+`lib/supabase/*.ts` — see below.
+
+### `.vercelignore` patterns must start with `/`
+
+`.vercelignore` is matched with `.gitignore` semantics, so an unanchored `supabase/`
+excludes a directory of that name **at any depth**. It was meant to drop the root SQL
+directory; it also dropped `lib/supabase/`, and the build failed with
+`Module not found: Can't resolve '@/lib/supabase/server'`.
+
+Check any change to that file against git's own matcher, which uses the same rules:
+
+```bash
+git ls-files --cached --ignored --exclude-from=.vercelignore | wc -l   # must be 59
+```
 
 ---
 

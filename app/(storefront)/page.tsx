@@ -29,8 +29,11 @@ import {
 } from "@/lib/queries/content";
 import { SITE } from "@/lib/utils/site";
 
+// No `title` here on purpose. The root layout sets a title template of
+// `%s — BRUNO`, so setting `BRUNO — Premium Apparel` here rendered
+// `BRUNO — Premium Apparel — BRUNO`. Omitting it falls through to the layout's
+// `title.default`, which is already exactly `BRUNO — Premium Apparel`.
 export const metadata: Metadata = {
-  title: `${SITE.name} — ${SITE.tagline}`,
   description: SITE.description,
   alternates: { canonical: "/" },
 };

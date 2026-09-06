@@ -3,6 +3,17 @@
 Updated 2026-09-06, end of Phase 3. Per Agents.md prime directive #1, nothing here
 pretends to work.
 
+> **Live at https://bruno-ecommerce.vercel.app — all 40 route checks pass against
+> production.** Two settings had to be corrected to get there, both outside the
+> repository: the Vercel **Root Directory** was still `legacy` (the old Vite SPA), and
+> `.vercelignore` used unanchored patterns so `supabase/` also removed `lib/supabase/`.
+> Memory.md D-041 and D-042.
+>
+> **Checkout cannot take payment yet.** Production has only five environment variables —
+> `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`,
+> `NEXT_PUBLIC_SITE_URL`, `EMAIL_FROM`. The Stripe keys are absent, so the pages render
+> but the payment step will fail. See "Not connected in production" below.
+
 > **Right now: the schema is applied, but the seed was run twice.** Several tables have
 > duplicate rows — most visibly `navigation_items`, so the header lists every link twice.
 > Fix it in one step: paste `supabase/fix-duplicates.sql` into the Supabase SQL editor
@@ -41,6 +52,17 @@ These were checked by running them, not by reading them.
 | Horizontal overflow at 375 / 414 / 768 / 1024 px | ✅ `scrollWidth` equals the viewport on every storefront page, measured over the DevTools Protocol |
 | Cart pricing against the **live** Supabase project | ✅ subtotal, shipping, coupons and totals all correct on real data |
 | **Deployment rehearsal**: tracked files only, `.vercelignore` applied, fresh `npm ci`, no env vars | ✅ builds 42 routes and passes all 40 route checks — proves nothing the build needs is excluded from the upload |
+| **Production build on Vercel**, after fixing Root Directory and `.vercelignore` | ✅ `Route (app)` table complete, `Removed 59 ignored files` (was 64), static params generated from the live database |
+| **`npm run test:http -- https://bruno-ecommerce.vercel.app`** | ✅ ALL 40 ROUTES OK — including real 404s and signed-out `/account` redirects |
+| Homepage served from production | ✅ 406 KB, 9 product links, 303 `images.unsplash.com` references — real catalogue data, not fallback |
+
+## Not connected in production
+
+| Capability | Blocker |
+|---|---|
+| Taking payment | `STRIPE_SECRET_KEY`, `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`, `STRIPE_WEBHOOK_SECRET` are not set on Vercel. Add them, then point a Stripe webhook at `/api/webhooks/stripe`. |
+| Transactional email | `RESEND_API_KEY` and `ADMIN_NOTIFICATION_EMAIL` are not set on Vercel. `email_log` is still written, so nothing is lost — it just does not send. |
+| Photo credits | `product_images.credit` does not exist in the live database, because the photography was applied over REST, which cannot run DDL. Nothing reads the column. One line fixes it: `alter table product_images add column if not exists credit text;` |
 | `/account` with no session | ✅ redirects to `/login?next=/account` |
 | `app/favicon.ico` | ✅ real multi-image ICO (16/32/48), verified by file signature — previously a 200 serving Next's HTML 404 |
 | Open Graph cards | ✅ 21 PNGs at 1200x630, verified as `PNG image data, 1200 x 630` |
