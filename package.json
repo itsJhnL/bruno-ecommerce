@@ -12,7 +12,8 @@
     "images": "tsx scripts/generate-images.ts",
     "test:db": "node supabase/tests/checkout-flow.mjs && node supabase/tests/rls-isolation.mjs && node supabase/tests/seed-idempotency.mjs && node supabase/tests/bundle.mjs",
     "db:bundle": "node scripts/bundle-sql.mjs",
-    "images:raster": "node scripts/rasterise.mjs"
+    "images:raster": "node scripts/rasterise.mjs",
+    "test:http": "node scripts/smoke.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.3",

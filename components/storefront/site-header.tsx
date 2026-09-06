@@ -150,7 +150,11 @@ export function SiteHeader({ nav, announcement }: SiteHeaderProps) {
             })}
           </nav>
 
-          <div className="flex shrink-0 items-center gap-1">
+          {/* `shrink-0` keeps a long menu from pushing these off the bar, but it
+              also means they cannot give up the last 2px at 375. A tighter gap
+              on small screens reclaims it — measured, not guessed
+              (Memory.md D-039). */}
+          <div className="flex shrink-0 items-center gap-0.5 sm:gap-1">
             <Button variant="ghost" size="icon" asChild aria-label="Search the collection">
               <Link href="/collection">
                 <Search className="size-[18px]" strokeWidth={1.5} />

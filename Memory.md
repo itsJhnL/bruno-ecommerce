@@ -36,6 +36,45 @@ Append-only. Newest entries at the top. Every agent reads this first and updates
 
 ## Decisions
 
+### D-038 · A `loading.tsx` at the root turned every 404 into a soft 404 — 2026-09-06
+In production, `/product/anything-missing` returned **HTTP 200** with a page that said
+"404". Same for missing categories, journal entries and CMS pages. A path matching no
+route at all correctly returned 404, which is what made it confusing — `notFound()` was
+being called, and ignored.
+
+**Cause:** `app/(storefront)/loading.tsx`. A loading boundary makes Next stream the
+response, so the shell and its `200 OK` are flushed before the page body runs. A
+`notFound()` after that cannot change a status already on the wire.
+
+**Fix:** the boundary now lives on `/collection` alone — the one storefront route that is
+genuinely slow (server-side filtering) and can never call `notFound()`. Verified: those
+four paths went from 200 to 404, and every real page still returns 200.
+
+**Why it matters more than it looks.** A soft 404 is indexed as a real page. Every
+mistyped or retired product URL would have entered the index as a live page saying
+"this piece is not in the archive". Status codes are invisible in a browser, which is
+exactly why they need a test rather than a look — hence `npm run test:http`
+(`scripts/smoke.mjs`), 40 routes with expected statuses, which also runs against a
+deployed URL.
+
+### D-039 · Measure the browser, do not read the screenshot — 2026-09-06
+A 375px screenshot appeared to show heavy horizontal clipping: announcement bar, search
+field and product images all cut off. I changed the header gaps to fix it. **The
+screenshot was lying** — `--window-size` in headless Chrome without device emulation does
+not set the layout viewport the way a phone does.
+
+Driving Chrome over the DevTools Protocol with `Emulation.setDeviceMetricsOverride` and
+asking the page for `document.documentElement.scrollWidth` gave the real answer, and then
+the exact culprit: `scrollWidth` 377 against a 375 viewport, from **one element** — the
+header icon cluster, overflowing by 2px because the `shrink-0` added in D-034 stopped it
+compressing. A `gap-0.5 sm:gap-1` reclaims it. Every storefront page now measures exactly
+375.
+
+**Two lessons.** The first guess (tighten every gap) would have "worked" while hiding that
+the cause was a change I had made. And a rendering bug needs a measurement, not a look —
+`scratchpad/overflow.mjs` asks the browser which elements cross the viewport edge, which
+took one run to answer what two rebuilds of guessing did not.
+
 ### D-037 · An unset site URL sent paying customers to a domain we do not own — 2026-09-06
 `siteUrl()` fell through to the seeded `site.url` when `NEXT_PUBLIC_SITE_URL` was unset —
 `https://bruno.example.com`. That value feeds canonicals, OG image URLs, the sitemap,

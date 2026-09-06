@@ -37,6 +37,9 @@ These were checked by running them, not by reading them.
 | **RLS customer isolation, 25 assertions** | ✅ all pass — and **verified failing-by-default**: disabling RLS on `orders` and `addresses` made 9 of them fail, including the write |
 | **Seed idempotency, 28 assertions** | ✅ the seed now runs twice with zero duplication — and **verified failing-by-default**: without migration 0010 it reports 10 failures matching the live database exactly |
 | Header with a duplicated menu | ✅ nav scrolls; account and bag icons stay visible |
+| **40 routes checked for HTTP status** (`npm run test:http`) | ✅ all correct — including that missing products/categories/articles/pages return **404, not a soft 404** |
+| Horizontal overflow at 375 / 414 / 768 / 1024 px | ✅ `scrollWidth` equals the viewport on every storefront page, measured over the DevTools Protocol |
+| Cart pricing against the **live** Supabase project | ✅ subtotal, shipping, coupons and totals all correct on real data |
 | `/account` with no session | ✅ redirects to `/login?next=/account` |
 | `app/favicon.ico` | ✅ real multi-image ICO (16/32/48), verified by file signature — previously a 200 serving Next's HTML 404 |
 | Open Graph cards | ✅ 21 PNGs at 1200x630, verified as `PNG image data, 1200 x 630` |

@@ -136,6 +136,7 @@ currently shows `clientcare@bruno.example.com`, seeded from `site.email`.
 | `npm run typecheck` | `tsc --noEmit`, strict |
 | `npm run lint` | ESLint, `next/core-web-vitals` + `next/typescript` |
 | `npm run test:db` | 59 checkout assertions plus a proof that `apply-all.sql` applies |
+| `npm run test:http` | 40 routes, expected status codes. `npm run test:http -- https://your.site` checks a deployment |
 | `npm run db:bundle` | Rebuild `supabase/apply-all.sql` from the migrations and seed |
 | `npm run images` | Regenerate the SVG image set |
 | `npm run db:types` | Regenerate `types/database.ts` from Supabase |
