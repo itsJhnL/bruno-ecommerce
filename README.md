@@ -95,6 +95,38 @@ immediately. Writes never fall back — they fail loudly.
 
 ---
 
+## Deploying to Vercel
+
+The build succeeds **with or without** Supabase configured — verified both ways. Without
+it the storefront serves the built-in demo catalogue and the bag says so, which means a
+missing variable is a quiet degradation rather than a failed deploy. Set these in
+Project Settings -> Environment Variables:
+
+| Variable | Needed for | If missing |
+|---|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | everything | demo catalogue, no bag |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | everything | demo catalogue, no bag |
+| `SUPABASE_SERVICE_ROLE_KEY` | cart, checkout, webhooks | bag reports it cannot connect |
+| `NEXT_PUBLIC_SITE_URL` | canonicals, OG, sitemap, Stripe return | falls back to the Vercel domain |
+| `STRIPE_SECRET_KEY` | taking payment | pay button disabled, says why |
+| `STRIPE_WEBHOOK_SECRET` | marking orders paid | webhook returns 503 |
+| `RESEND_API_KEY` | transactional email | sends are logged as SKIPPED |
+| `ADMIN_NOTIFICATION_EMAIL` | staff notices | staff email skipped |
+
+`SUPABASE_SERVICE_ROLE_KEY` bypasses Row Level Security. It must **not** be prefixed
+`NEXT_PUBLIC_`, and `lib/supabase/admin.ts` imports `server-only` so that importing it
+into a Client Component fails the build rather than leaking it.
+
+**Point the Stripe webhook** at `https://your-domain/api/webhooks/stripe` for
+`checkout.session.completed`, `checkout.session.expired`,
+`checkout.session.async_payment_succeeded`, `checkout.session.async_payment_failed` and
+`charge.refunded`.
+
+**Before launch**, replace the demo contact details in `site_settings` — the footer
+currently shows `clientcare@bruno.example.com`, seeded from `site.email`.
+
+---
+
 ## Scripts
 
 | Command | What it does |

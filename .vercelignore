@@ -1,0 +1,17 @@
+# Keep the deployment to what actually serves requests.
+#
+# None of this is imported by the application, but Vercel uploads every file in
+# the repository unless told otherwise — and `supabase/` alone is ~250 KB of SQL
+# that would sit in a serverless bundle doing nothing.
+
+legacy/
+supabase/
+scripts/
+docs/
+Claude outputs/
+
+Agents.md
+Design.md
+Goals.md
+Memory.md
+PRD.md

@@ -36,6 +36,24 @@ Append-only. Newest entries at the top. Every agent reads this first and updates
 
 ## Decisions
 
+### D-037 · An unset site URL sent paying customers to a domain we do not own — 2026-09-06
+`siteUrl()` fell through to the seeded `site.url` when `NEXT_PUBLIC_SITE_URL` was unset —
+`https://bruno.example.com`. That value feeds canonicals, OG image URLs, the sitemap,
+JSON-LD, password-reset links and **the URL Stripe returns the customer to after paying**.
+A Vercel deploy without that one variable would have taken money and then redirected the
+buyer to somebody else's domain.
+
+Two faults, not one. The `??` also let a *blank* variable through, which Vercel sets
+readily — that produced bare paths instead of absolute URLs. Both are fixed: blank is
+treated as absent, and the fallback chain is now explicit site URL, then Vercel's
+production domain, then the per-deployment preview URL, then localhost. **The seeded
+`site.url` is deliberately no longer a fallback: a plausible wrong answer is worse than an
+obviously wrong one.** Seven cases covered by a table test.
+
+**Also verified:** the production build succeeds both with and without Supabase
+configured. That matters because the fallback path is the one nobody exercises, and it is
+exactly what a fresh Vercel project runs before anyone adds the variables.
+
 ### D-035 · Real photography, and the limit of what it can honestly claim — 2026-09-06
 The owner asked for photographs rather than drawings. There is still no image model here,
 so the honest move was to source **real, commercially-licensed photographs** and wire them
