@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="atelier-wool-blazer-material-ground" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="atelier-wool-blazer-material-bloom" cx="0.78" cy="0.14" r="0.74">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.30"/>
+      <stop offset="44%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="atelier-wool-blazer-material-cool" cx="0.12" cy="0.86" r="0.62">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7e96b8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- The cloth: shadow to body to highlight, raked from the light side. -->
+    <linearGradient id="atelier-wool-blazer-material-cloth" x1="1" y1="0.06" x2="0" y2="0.96">
+      <stop offset="0%"   stop-color="#9aa2b0" stop-opacity="0.38"/>
+      <stop offset="20%"  stop-color="#383c49"/>
+      <stop offset="64%"  stop-color="#383c49"/>
+      <stop offset="100%" stop-color="#15171d"/>
+    </linearGradient>
+    <!-- Specular band. Silk gets a hard one, suede almost none. -->
+    <linearGradient id="atelier-wool-blazer-material-spec" x1="0.42" y1="0" x2="1.1" y2="0.72">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="44%"  stop-color="#eddcbd" stop-opacity="0.05"/>
+      <stop offset="53%"  stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="63%"  stop-color="#eddcbd" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Turns a flat fill into something with a near and a far edge. -->
+    <linearGradient id="atelier-wool-blazer-material-round" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="66%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.1"/>
+    </linearGradient>
+    <radialGradient id="atelier-wool-blazer-material-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Findings. Fixed ids: garments.ts refers to them by name. -->
+    <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#eddcbd"/>
+      <stop offset="42%"  stop-color="#c9a96a"/>
+      <stop offset="100%" stop-color="#9a7c42"/>
+    </linearGradient>
+    <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0%"   stop-color="#9aa2b0" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#15171d"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%"   stop-color="#a8783f"/>
+      <stop offset="50%"  stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#150e09"/>
+    </linearGradient>
+    <pattern id="atelier-wool-blazer-material-weave" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(32)">
+        <rect width="6" height="6" fill="none"/>
+        <line x1="0" y1="0" x2="0" y2="6" stroke="#9aa2b0" stroke-opacity="0.20" stroke-width="1.32"/>
+        <line x1="3" y1="0" x2="3" y2="6" stroke="#000000" stroke-opacity="0.24" stroke-width="1.2"/>
+      </pattern>
+    <clipPath id="atelier-wool-blazer-material-clip"><path d="
+    M 276 264
+    L 452 274
+    C 474 312 526 312 548 274
+    L 724 264
+    C 776 312 792 508 784 720
+    L 700 734
+    C 690 556 664 486 616 470
+    C 626 660 632 800 636 900
+    C 590 918 550 924 500 924
+    C 450 924 410 918 364 900
+    C 368 800 374 660 384 470
+    C 336 486 310 556 300 734
+    L 216 720
+    C 208 508 224 312 276 264
+    Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#atelier-wool-blazer-material-ground)"/>
+  <rect width="1000" height="1250" fill="url(#atelier-wool-blazer-material-bloom)"/>
+  <rect width="1000" height="1250" fill="url(#atelier-wool-blazer-material-cool)"/>
+  <g >
+    <!-- Contact shadow. Without it the garment floats. -->
+    <ellipse cx="500" cy="934" rx="190" ry="24"
+             fill="url(#atelier-wool-blazer-material-contact)"/>
+    <!-- The garment. -->
+    <g clip-path="url(#atelier-wool-blazer-material-clip)">
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#atelier-wool-blazer-material-cloth)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#atelier-wool-blazer-material-weave)"/>
+      <path d="M 299.98 200 C 279.98 560 320.16 820 330.26 1200
+                L 390.18 1200 C 380.08 820 339.9 560 359.9 200 Z"
+             fill="#9aa2b0" fill-opacity="0.04"/><path d="M 419.62 200 C 399.62 560 438.17 820 447.45 1200
+                L 517.96 1200 C 508.68 820 470.13 560 490.13 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 569.17 200 C 549.17 560 553.04 820 544.98 1200
+                L 607.48 1200 C 615.54 820 611.67 560 631.67 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 736.34 200 C 716.34 560 765.75 820 780.46 1200
+                L 827.3 1200 C 812.6 820 763.18 560 783.18 200 Z"
+             fill="#000000" fill-opacity="0.15"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#atelier-wool-blazer-material-spec)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#atelier-wool-blazer-material-round)"/>
+      <path d="
+    M 440 302 C 472 284 528 284 560 302
+    L 610 324 C 624 294 608 268 572 258
+    C 528 250 472 250 428 258
+    C 392 268 376 294 390 324
+    Z" fill="#000000" fill-opacity="0.46" fill-rule="evenodd"/><path d="
+    M 500 600
+    C 520 496 542 388 560 302
+    L 440 302
+    C 458 388 480 496 500 600
+    Z" fill="#000000" fill-opacity="0.74" fill-rule="evenodd"/><path d="
+    M 500 600
+    C 520 496 542 388 560 302
+    L 610 324 L 588 376 L 616 428
+    C 582 492 540 552 500 600
+    Z" fill="#9aa2b0" fill-opacity="0.15" fill-rule="evenodd"/><path d="
+    M 500 600
+    C 480 496 458 388 440 302
+    L 390 324 L 412 376 L 384 428
+    C 418 492 460 552 500 600
+    Z" fill="#9aa2b0" fill-opacity="0.15" fill-rule="evenodd"/><path d="M 566 480 L 618 486 L 618 500 L 566 494 Z" fill="#000000" fill-opacity="0.45" fill-rule="evenodd"/><path d="M 380 764 L 470 758 L 470 786 L 380 792 Z" fill="#000000" fill-opacity="0.5" fill-rule="evenodd"/><path d="M 530 758 L 620 764 L 620 792 L 530 786 Z" fill="#000000" fill-opacity="0.5" fill-rule="evenodd"/>
+    </g>
+    <!-- Rim light along the lit edge, then the construction. -->
+    <path d="
+    M 276 264
+    L 452 274
+    C 474 312 526 312 548 274
+    L 724 264
+    C 776 312 792 508 784 720
+    L 700 734
+    C 690 556 664 486 616 470
+    C 626 660 632 800 636 900
+    C 590 918 550 924 500 924
+    C 450 924 410 918 364 900
+    C 368 800 374 660 384 470
+    C 336 486 310 556 300 734
+    L 216 720
+    C 208 508 224 312 276 264
+    Z" fill="none" fill-rule="evenodd" stroke="#9aa2b0"
+          stroke-opacity="0.26" stroke-width="2"/>
+    <path d="
+    M 276 264
+    L 452 274
+    C 474 312 526 312 548 274
+    L 724 264
+    C 776 312 792 508 784 720
+    L 700 734
+    C 690 556 664 486 616 470
+    C 626 660 632 800 636 900
+    C 590 918 550 924 500 924
+    C 450 924 410 918 364 900
+    C 368 800 374 660 384 470
+    C 336 486 310 556 300 734
+    L 216 720
+    C 208 508 224 312 276 264
+    Z" fill="none" fill-rule="evenodd" stroke="#000000"
+          stroke-opacity="0.4" stroke-width="1"/>
+    <g clip-path="url(#atelier-wool-blazer-material-clip)"><path d="M 500 600 C 540 552 582 492 616 428 L 588 376 L 610 324" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 600 C 540 552 582 492 616 428 L 588 376 L 610 324" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 500 600 C 460 552 418 492 384 428 L 412 376 L 390 324" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 600 C 460 552 418 492 384 428 L 412 376 L 390 324" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 500 600 C 520 496 542 388 560 302" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 600 C 520 496 542 388 560 302" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 500 600 C 480 496 458 388 440 302" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 600 C 480 496 458 388 440 302" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 560 302 L 610 324" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 560 302 L 610 324" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 440 302 L 390 324" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 440 302 L 390 324" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 500 600 C 498 720 496 830 496 908" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 600 C 498 720 496 830 496 908" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 724 264 C 692 330 678 402 676 470" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 724 264 C 692 330 678 402 676 470" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 276 264 C 308 330 322 402 324 470" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 276 264 C 308 330 322 402 324 470" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 596 508 C 610 620 618 760 622 892" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 596 508 C 610 620 618 760 622 892" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 404 508 C 390 620 382 760 378 892" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 404 508 C 390 620 382 760 378 892" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 380 764 L 470 758" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 530 758 L 620 764" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/></g>
+    <g>
+    <circle cx="508" cy="631.5" r="14" fill="#000" fill-opacity="0.5"/>
+    <circle cx="508" cy="630" r="14" fill="url(#horn)"/>
+    <circle cx="508" cy="630" r="14" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="503.8" cy="625.8" r="2.24" fill="#000" fill-opacity="0.55"/>
+    <circle cx="512.2" cy="634.2" r="2.24" fill="#000" fill-opacity="0.55"/>
+    <path d="M 499.32 621.32 a 12.32 12.32 0 0 1 12.6 -1.4000000000000001"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.24" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="506" cy="723.5" r="14" fill="#000" fill-opacity="0.5"/>
+    <circle cx="506" cy="722" r="14" fill="url(#horn)"/>
+    <circle cx="506" cy="722" r="14" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="501.8" cy="717.8" r="2.24" fill="#000" fill-opacity="0.55"/>
+    <circle cx="510.2" cy="726.2" r="2.24" fill="#000" fill-opacity="0.55"/>
+    <path d="M 497.32 713.32 a 12.32 12.32 0 0 1 12.6 -1.4000000000000001"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.24" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="766" cy="701.5" r="9" fill="#000" fill-opacity="0.5"/>
+    <circle cx="766" cy="700" r="9" fill="url(#horn)"/>
+    <circle cx="766" cy="700" r="9" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="763.3" cy="697.3" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <circle cx="768.7" cy="702.7" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <path d="M 760.42 694.42 a 7.92 7.92 0 0 1 8.1 -0.9"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.44" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="766" cy="723.5" r="9" fill="#000" fill-opacity="0.5"/>
+    <circle cx="766" cy="722" r="9" fill="url(#horn)"/>
+    <circle cx="766" cy="722" r="9" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="763.3" cy="719.3" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <circle cx="768.7" cy="724.7" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <path d="M 760.42 716.42 a 7.92 7.92 0 0 1 8.1 -0.9"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.44" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="234" cy="701.5" r="9" fill="#000" fill-opacity="0.5"/>
+    <circle cx="234" cy="700" r="9" fill="url(#horn)"/>
+    <circle cx="234" cy="700" r="9" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="231.3" cy="697.3" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <circle cx="236.7" cy="702.7" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <path d="M 228.42 694.42 a 7.92 7.92 0 0 1 8.1 -0.9"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.44" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="234" cy="723.5" r="9" fill="#000" fill-opacity="0.5"/>
+    <circle cx="234" cy="722" r="9" fill="url(#horn)"/>
+    <circle cx="234" cy="722" r="9" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="231.3" cy="719.3" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <circle cx="236.7" cy="724.7" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <path d="M 228.42 716.42 a 7.92 7.92 0 0 1 8.1 -0.9"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.44" stroke-linecap="round"/>
+  </g>
+  </g>
+  <filter id="atelier-wool-blazer-material-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1000" height="1250" filter="url(#atelier-wool-blazer-material-grain)" opacity="0.075" style="mix-blend-mode:overlay"/>
+  <text x="926" y="1198" font-family="Cormorant Garamond, Georgia, serif" font-size="22"
+    font-weight="300" fill="#e3cba0" fill-opacity="0.16" text-anchor="middle"
+    dominant-baseline="central" letter-spacing="0.04em">B</text>
+</svg>

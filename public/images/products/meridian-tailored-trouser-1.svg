@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="meridian-tailored-trouser-material-ground" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="meridian-tailored-trouser-material-bloom" cx="0.22" cy="0.14" r="0.74">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.30"/>
+      <stop offset="44%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="meridian-tailored-trouser-material-cool" cx="0.88" cy="0.86" r="0.62">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7e96b8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- The cloth: shadow to body to highlight, raked from the light side. -->
+    <linearGradient id="meridian-tailored-trouser-material-cloth" x1="0" y1="0.06" x2="1" y2="0.96">
+      <stop offset="0%"   stop-color="#9aa2b0" stop-opacity="0.38"/>
+      <stop offset="20%"  stop-color="#383c49"/>
+      <stop offset="64%"  stop-color="#383c49"/>
+      <stop offset="100%" stop-color="#15171d"/>
+    </linearGradient>
+    <!-- Specular band. Silk gets a hard one, suede almost none. -->
+    <linearGradient id="meridian-tailored-trouser-material-spec" x1="-0.1" y1="0" x2="0.58" y2="0.72">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="44%"  stop-color="#eddcbd" stop-opacity="0.05"/>
+      <stop offset="53%"  stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="63%"  stop-color="#eddcbd" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Turns a flat fill into something with a near and a far edge. -->
+    <linearGradient id="meridian-tailored-trouser-material-round" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="34%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="meridian-tailored-trouser-material-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Findings. Fixed ids: garments.ts refers to them by name. -->
+    <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#eddcbd"/>
+      <stop offset="42%"  stop-color="#c9a96a"/>
+      <stop offset="100%" stop-color="#9a7c42"/>
+    </linearGradient>
+    <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0%"   stop-color="#9aa2b0" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#15171d"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%"   stop-color="#a8783f"/>
+      <stop offset="50%"  stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#150e09"/>
+    </linearGradient>
+    <pattern id="meridian-tailored-trouser-material-weave" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(32)">
+        <rect width="6" height="6" fill="none"/>
+        <line x1="0" y1="0" x2="0" y2="6" stroke="#9aa2b0" stroke-opacity="0.20" stroke-width="1.32"/>
+        <line x1="3" y1="0" x2="3" y2="6" stroke="#000000" stroke-opacity="0.24" stroke-width="1.2"/>
+      </pattern>
+    <clipPath id="meridian-tailored-trouser-material-clip"><path d="
+    M 332 330
+    L 668 330
+    C 676 560 684 860 692 1148
+    L 566 1148
+    C 552 916 528 736 500 650
+    C 472 736 448 916 434 1148
+    L 308 1148
+    C 316 860 324 560 332 330
+    Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#meridian-tailored-trouser-material-ground)"/>
+  <rect width="1000" height="1250" fill="url(#meridian-tailored-trouser-material-bloom)"/>
+  <rect width="1000" height="1250" fill="url(#meridian-tailored-trouser-material-cool)"/>
+  <g >
+    <!-- Contact shadow. Without it the garment floats. -->
+    <ellipse cx="500" cy="1160" rx="210" ry="24"
+             fill="url(#meridian-tailored-trouser-material-contact)"/>
+    <!-- The garment. -->
+    <g clip-path="url(#meridian-tailored-trouser-material-clip)">
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#meridian-tailored-trouser-material-cloth)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#meridian-tailored-trouser-material-weave)"/>
+      <path d="M 279.47 200 C 259.47 560 293.87 820 301.07 1200
+                L 351.75 1200 C 344.55 820 310.15 560 330.15 200 Z"
+             fill="#9aa2b0" fill-opacity="0.04"/><path d="M 449.77 200 C 429.77 560 464.3 820 471.56 1200
+                L 521.89 1200 C 514.63 820 480.1 560 500.1 200 Z"
+             fill="#9aa2b0" fill-opacity="0.04"/><path d="M 569.98 200 C 549.98 560 599.22 820 613.83 1200
+                L 694.02 1200 C 679.4 820 630.17 560 650.17 200 Z"
+             fill="#9aa2b0" fill-opacity="0.04"/><path d="M 730.26 200 C 710.26 560 748.42 820 757.51 1200
+                L 811.79 1200 C 802.7 820 764.54 560 784.54 200 Z"
+             fill="#9aa2b0" fill-opacity="0.04"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#meridian-tailored-trouser-material-spec)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#meridian-tailored-trouser-material-round)"/>
+      <path d="M 330 330 L 670 330 L 672 386 L 328 386 Z" fill="#000000" fill-opacity="0.4" fill-rule="evenodd"/><path d="M 470 386 L 486 386 L 492 640 L 476 640 Z" fill="#000000" fill-opacity="0.3" fill-rule="evenodd"/><path d="M 514 386 L 530 386 L 524 640 L 508 640 Z" fill="#000000" fill-opacity="0.3" fill-rule="evenodd"/><path d="M 344 396 L 380 396 L 348 500 L 336 500 Z" fill="#000000" fill-opacity="0.34" fill-rule="evenodd"/><path d="M 656 396 L 620 396 L 652 500 L 664 500 Z" fill="#000000" fill-opacity="0.34" fill-rule="evenodd"/>
+    </g>
+    <!-- Rim light along the lit edge, then the construction. -->
+    <path d="
+    M 332 330
+    L 668 330
+    C 676 560 684 860 692 1148
+    L 566 1148
+    C 552 916 528 736 500 650
+    C 472 736 448 916 434 1148
+    L 308 1148
+    C 316 860 324 560 332 330
+    Z" fill="none" fill-rule="evenodd" stroke="#9aa2b0"
+          stroke-opacity="0.26" stroke-width="2"/>
+    <path d="
+    M 332 330
+    L 668 330
+    C 676 560 684 860 692 1148
+    L 566 1148
+    C 552 916 528 736 500 650
+    C 472 736 448 916 434 1148
+    L 308 1148
+    C 316 860 324 560 332 330
+    Z" fill="none" fill-rule="evenodd" stroke="#000000"
+          stroke-opacity="0.4" stroke-width="1"/>
+    <g clip-path="url(#meridian-tailored-trouser-material-clip)"><path d="M 398 386 C 392 620 380 880 372 1146" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 398 386 C 392 620 380 880 372 1146" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 604 386 C 610 620 622 880 630 1146" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 604 386 C 610 620 622 880 630 1146" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 500 386 C 500 480 500 570 500 648" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 386 C 500 480 500 570 500 648" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 312 1096 L 432 1096" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 312 1096 L 432 1096" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 568 1096 L 688 1096" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 568 1096 L 688 1096" fill="none" stroke="#9aa2b0" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 330 340 L 670 340" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 330 378 L 670 378" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/></g>
+    <g>
+    <circle cx="500" cy="359.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="358" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="358" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="354.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="361.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 351.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><rect x="366" y="326" width="13" height="64" rx="4" fill="#000" fill-opacity="0.4"/><rect x="621" y="326" width="13" height="64" rx="4" fill="#000" fill-opacity="0.4"/><rect x="494" y="322" width="13" height="42" rx="4" fill="#000" fill-opacity="0.35"/>
+  </g>
+  <filter id="meridian-tailored-trouser-material-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1000" height="1250" filter="url(#meridian-tailored-trouser-material-grain)" opacity="0.075" style="mix-blend-mode:overlay"/>
+  <text x="926" y="1198" font-family="Cormorant Garamond, Georgia, serif" font-size="22"
+    font-weight="300" fill="#e3cba0" fill-opacity="0.16" text-anchor="middle"
+    dominant-baseline="central" letter-spacing="0.04em">B</text>
+</svg>

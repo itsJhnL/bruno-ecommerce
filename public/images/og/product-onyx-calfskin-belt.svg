@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img">
+  <defs>
+    <linearGradient id="og-product-onyx-calfskin-belt-ground" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="og-product-onyx-calfskin-belt-bloom" cx="0.76" cy="0.14" r="0.72">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="og-product-onyx-calfskin-belt-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="og-product-onyx-calfskin-belt-cloth" x1="0" y1="0.06" x2="1" y2="0.96">
+         <stop offset="0%"   stop-color="#a8783f" stop-opacity="0.38"/>
+         <stop offset="20%"  stop-color="#432c17"/>
+         <stop offset="64%"  stop-color="#432c17"/>
+         <stop offset="100%" stop-color="#150e09"/>
+       </linearGradient>
+       <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+         <stop offset="0%"   stop-color="#eddcbd"/>
+         <stop offset="42%"  stop-color="#c9a96a"/>
+         <stop offset="100%" stop-color="#9a7c42"/>
+       </linearGradient>
+       <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+         <stop offset="0%"   stop-color="#a8783f" stop-opacity="0.85"/>
+         <stop offset="55%"  stop-color="#150e09"/>
+         <stop offset="100%" stop-color="#000000"/>
+       </radialGradient>
+       <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+         <stop offset="0%"   stop-color="#a8783f"/>
+         <stop offset="50%"  stop-color="#432c17"/>
+         <stop offset="100%" stop-color="#150e09"/>
+       </linearGradient>
+       <pattern id="og-product-onyx-calfskin-belt-weave" width="30" height="26" patternUnits="userSpaceOnUse">
+        <ellipse cx="8" cy="7" rx="6.2" ry="4.8" fill="#a8783f" fill-opacity="0.09"/>
+        <ellipse cx="22" cy="19" rx="7.4" ry="5.2" fill="#a8783f" fill-opacity="0.07"/>
+        <ellipse cx="24" cy="5" rx="4.2" ry="3.6" fill="#000000" fill-opacity="0.16"/>
+        <ellipse cx="6" cy="21" rx="5" ry="4" fill="#000000" fill-opacity="0.13"/>
+      </pattern>
+    <clipPath id="og-product-onyx-calfskin-belt-clip"><path d="
+    M 500 296
+    C 654 296 780 396 780 520
+    C 780 644 654 744 500 744
+    C 346 744 220 644 220 520
+    C 220 396 346 296 500 296
+    Z
+    M 500 396
+    C 402 396 322 452 322 520
+    C 322 588 402 644 500 644
+    C 598 644 678 588 678 520
+    C 678 452 598 396 500 396
+    Z 
+    M 322 540 C 300 640 320 760 396 846
+    C 428 882 470 900 512 902
+    L 512 838
+    C 470 834 436 812 414 776
+    C 372 706 366 620 384 546 Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og-product-onyx-calfskin-belt-ground)"/>
+  <rect width="1200" height="630" fill="url(#og-product-onyx-calfskin-belt-bloom)"/>
+  <g transform="translate(808 8) scale(0.49)">
+          <ellipse cx="500" cy="760" rx="250" ry="28"
+                   fill="url(#og-product-onyx-calfskin-belt-contact)"/>
+          <g clip-path="url(#og-product-onyx-calfskin-belt-clip)">
+            <rect width="1000" height="1250" fill="url(#og-product-onyx-calfskin-belt-cloth)"/>
+            <rect width="1000" height="1250" fill="url(#og-product-onyx-calfskin-belt-weave)"/>
+            <path d="M 220 520 C 220 644 346 744 500 744 C 654 744 780 644 780 520 L 678 520 C 678 588 598 644 500 644 C 402 644 322 588 322 520 Z" fill="#000000" fill-opacity="0.34" fill-rule="evenodd"/><path d="M 322 540 C 300 640 320 760 396 846 L 440 812 C 380 736 372 630 384 552 Z" fill="#a8783f" fill-opacity="0.12" fill-rule="evenodd"/>
+          </g>
+          <path d="
+    M 500 296
+    C 654 296 780 396 780 520
+    C 780 644 654 744 500 744
+    C 346 744 220 644 220 520
+    C 220 396 346 296 500 296
+    Z
+    M 500 396
+    C 402 396 322 452 322 520
+    C 322 588 402 644 500 644
+    C 598 644 678 588 678 520
+    C 678 452 598 396 500 396
+    Z 
+    M 322 540 C 300 640 320 760 396 846
+    C 428 882 470 900 512 902
+    L 512 838
+    C 470 834 436 812 414 776
+    C 372 706 366 620 384 546 Z" fill="none" fill-rule="evenodd" stroke="#a8783f"
+                stroke-opacity="0.24" stroke-width="2.4"/>
+          <g clip-path="url(#og-product-onyx-calfskin-belt-clip)">
+            <path d="M 500 316 C 640 318 758 406 760 520" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 500 724 C 360 722 242 634 240 520" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/>
+          </g>
+      <g>
+        <rect x="430" y="884" width="150" height="112" rx="16" fill="none"
+              stroke="#000" stroke-opacity="0.55" stroke-width="26"/>
+        <rect x="430" y="880" width="150" height="112" rx="16" fill="none"
+              stroke="url(#brass)" stroke-width="20"/>
+        <rect x="430" y="880" width="150" height="112" rx="16" fill="none"
+              stroke="#fff" stroke-opacity="0.16" stroke-width="5"/>
+        <path d="M 505 890 L 505 986" stroke="#000" stroke-opacity="0.5" stroke-width="18" stroke-linecap="round"/>
+        <path d="M 505 886 L 505 982" stroke="url(#brass)" stroke-width="13" stroke-linecap="round"/>
+        <path d="M 505 924 L 386 918" stroke="#000" stroke-opacity="0.5" stroke-width="15" stroke-linecap="round"/>
+        <path d="M 505 920 L 386 914" stroke="url(#brass)" stroke-width="11" stroke-linecap="round"/>
+      </g>
+      <ellipse cx="462" cy="790" rx="7" ry="9" fill="#000" fill-opacity="0.66"/><ellipse cx="462" cy="788" rx="7" ry="9" fill="none" stroke="#fff" stroke-opacity="0.09" stroke-width="1.4"/><ellipse cx="464" cy="816" rx="7" ry="9" fill="#000" fill-opacity="0.66"/><ellipse cx="464" cy="814" rx="7" ry="9" fill="none" stroke="#fff" stroke-opacity="0.09" stroke-width="1.4"/><ellipse cx="466" cy="842" rx="7" ry="9" fill="#000" fill-opacity="0.66"/><ellipse cx="466" cy="840" rx="7" ry="9" fill="none" stroke="#fff" stroke-opacity="0.09" stroke-width="1.4"/><ellipse cx="468" cy="868" rx="7" ry="9" fill="#000" fill-opacity="0.66"/><ellipse cx="468" cy="866" rx="7" ry="9" fill="none" stroke="#fff" stroke-opacity="0.09" stroke-width="1.4"/><ellipse cx="470" cy="894" rx="7" ry="9" fill="#000" fill-opacity="0.66"/><ellipse cx="470" cy="892" rx="7" ry="9" fill="none" stroke="#fff" stroke-opacity="0.09" stroke-width="1.4"/>
+        </g>
+  <!-- Wordmark as outlines: the rasteriser's machine has no house font. -->
+  <g transform="translate(134.1 66) scale(0.3143)">
+          <path d="M 8 6 L 58 6 C 82 6 96 20 96 38 C 96 51 89 61 77 66 C 91 70 100 82 100 98 C 100 120 84 134 58 134 L 8 134 Z M 30 26 L 55 26 C 66 26 72 31 72 40 C 72 49 66 54 55 54 L 30 54 Z M 30 76 L 57 76 C 70 76 78 82 78 94 C 78 106 70 112 57 112 L 30 112 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(180.0 66) scale(0.3143)">
+          <path d="M 8 6 L 58 6 C 84 6 100 22 100 46 C 100 64 91 77 76 83 L 104 134 L 78 134 L 54 88 L 30 88 L 30 134 L 8 134 Z M 30 26 L 56 26 C 68 26 76 34 76 47 C 76 60 68 68 56 68 L 30 68 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(227.1 66) scale(0.3143)">
+          <path d="M 8 6 L 30 6 L 30 92 C 30 106 39 114 54 114 C 69 114 78 106 78 92 L 78 6 L 100 6 L 100 93 C 100 119 82 136 54 136 C 26 136 8 119 8 93 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(273.0 66) scale(0.3143)">
+          <path d="M 8 6 L 30 6 L 78 92 L 78 6 L 100 6 L 100 134 L 78 134 L 30 48 L 30 134 L 8 134 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(318.9 66) scale(0.3143)">
+          <path d="M 62 4 C 96 4 120 32 120 70 C 120 108 96 136 62 136 C 28 136 4 108 4 70 C 4 32 28 4 62 4 Z M 62 26 C 43 26 30 44 30 70 C 30 96 43 114 62 114 C 81 114 94 96 94 70 C 94 44 81 26 62 26 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g>
+  <line x1="96" y1="146" x2="396" y2="146" stroke="#9a7c42" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="96" y="176" font-size="15" font-weight="500" letter-spacing="6.6"
+        font-family="Helvetica, Arial, sans-serif" fill="#9a7c42">PREMIUM APPAREL</text>
+  <text x="96" y="292" font-size="18" font-weight="500" letter-spacing="5.2"
+        font-family="Helvetica, Arial, sans-serif" fill="#9a7c42">
+    THE COLLECTION
+  </text>
+  <text x="96" y="366" font-size="66" font-weight="300"
+               font-family="Futura, 'Century Gothic', 'Trebuchet MS', Helvetica, Arial, sans-serif"
+               letter-spacing="-1.4" fill="#f4f2ee">Onyx Calfskin</text><text x="96" y="438.6" font-size="66" font-weight="300"
+               font-family="Futura, 'Century Gothic', 'Trebuchet MS', Helvetica, Arial, sans-serif"
+               letter-spacing="-1.4" fill="#f4f2ee">Belt</text>
+  <g transform="translate(1082 512) scale(0.14) translate(-16 4)">
+    <path d="M 150 104 L 286 104 C 344 104 382 136 382 182 C 382 214 364 236 336 246 C 370 256 394 284 394 320 C 394 368 352 400 292 400 L 150 400 Z M 206 150 L 280 150 C 306 150 322 162 322 182 C 322 202 306 214 280 214 L 206 214 Z M 206 266 L 286 266 C 316 266 336 280 336 304 C 336 328 316 342 286 342 L 206 342 Z" fill="#9a7c42" fill-rule="evenodd"/>
+  </g>
+  <filter id="og-product-onyx-calfskin-belt-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1200" height="630" filter="url(#og-product-onyx-calfskin-belt-grain)" opacity="0.055" style="mix-blend-mode:overlay"/>
+</svg>

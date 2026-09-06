@@ -1,0 +1,26 @@
+{
+  "products": [
+    "obsidian-cashmere-overcoat",
+    "monolith-wool-topcoat",
+    "nocturne-leather-jacket",
+    "atelier-wool-blazer",
+    "meridian-tailored-trouser",
+    "cirrus-cashmere-crew",
+    "ember-merino-rollneck",
+    "vellum-silk-shirt",
+    "alabaster-poplin-shirt",
+    "ivory-linen-overshirt",
+    "solstice-suede-weekender",
+    "onyx-calfskin-belt",
+    "halo-silk-scarf",
+    "sable-cashmere-wrap"
+  ],
+  "categories": [
+    "outerwear",
+    "tailoring",
+    "knitwear",
+    "shirting",
+    "leather",
+    "accessories"
+  ]
+}

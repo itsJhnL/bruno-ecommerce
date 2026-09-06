@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 92" width="420" height="92" role="img">
+  <defs>
+    <linearGradient id="wm" x1="0" y1="0" x2="1" y2="0.6">
+      <stop offset="0%"   stop-color="#f6ebd8"/>
+      <stop offset="52%"  stop-color="#e3cba0"/>
+      <stop offset="100%" stop-color="#9a7c42"/>
+    </linearGradient>
+  </defs>
+  <text x="210" y="52" font-family="Cormorant Garamond, Georgia, serif" font-size="58" font-weight="300"
+        fill="url(#wm)" text-anchor="middle" letter-spacing="0.28em">BRUNO</text>
+  <line x1="118" y1="64" x2="302" y2="64" stroke="#9a7c42" stroke-opacity="0.5" stroke-width="0.8"/>
+  <text x="210" y="80" font-family="Inter Tight, Inter, sans-serif" font-size="9.5" font-weight="500"
+        fill="#9a7c42" text-anchor="middle" letter-spacing="0.44em">PREMIUM APPAREL</text>
+</svg>

@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="obsidian-cashmere-overcoat-detail-ground" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="obsidian-cashmere-overcoat-detail-bloom" cx="0.78" cy="0.14" r="0.74">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.30"/>
+      <stop offset="44%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="obsidian-cashmere-overcoat-detail-cool" cx="0.12" cy="0.86" r="0.62">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7e96b8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- The cloth: shadow to body to highlight, raked from the light side. -->
+    <linearGradient id="obsidian-cashmere-overcoat-detail-cloth" x1="1" y1="0.06" x2="0" y2="0.96">
+      <stop offset="0%"   stop-color="#c9b28d" stop-opacity="0.38"/>
+      <stop offset="20%"  stop-color="#4c3c2b"/>
+      <stop offset="64%"  stop-color="#4c3c2b"/>
+      <stop offset="100%" stop-color="#1a160f"/>
+    </linearGradient>
+    <!-- Specular band. Silk gets a hard one, suede almost none. -->
+    <linearGradient id="obsidian-cashmere-overcoat-detail-spec" x1="0.42" y1="0" x2="1.1" y2="0.72">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="44%"  stop-color="#eddcbd" stop-opacity="0.06"/>
+      <stop offset="53%"  stop-color="#ffffff" stop-opacity="0.09"/>
+      <stop offset="63%"  stop-color="#eddcbd" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Turns a flat fill into something with a near and a far edge. -->
+    <linearGradient id="obsidian-cashmere-overcoat-detail-round" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="66%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.1"/>
+    </linearGradient>
+    <radialGradient id="obsidian-cashmere-overcoat-detail-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Findings. Fixed ids: garments.ts refers to them by name. -->
+    <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#eddcbd"/>
+      <stop offset="42%"  stop-color="#c9a96a"/>
+      <stop offset="100%" stop-color="#9a7c42"/>
+    </linearGradient>
+    <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0%"   stop-color="#c9b28d" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#1a160f"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%"   stop-color="#a8783f"/>
+      <stop offset="50%"  stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#150e09"/>
+    </linearGradient>
+    <pattern id="obsidian-cashmere-overcoat-detail-weave" width="35" height="35" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+        <line x1="0" y1="7"     x2="35" y2="9.8" stroke="#c9b28d" stroke-opacity="0.11" stroke-width="2.38"/>
+        <line x1="0" y1="18.2" x2="35" y2="15.4" stroke="#000000" stroke-opacity="0.14" stroke-width="3.5"/>
+        <line x1="0" y1="28" x2="35" y2="30.8" stroke="#c9b28d" stroke-opacity="0.08" stroke-width="1.96"/>
+      </pattern>
+    <clipPath id="obsidian-cashmere-overcoat-detail-clip"><path d="
+    M 264 252
+    L 448 262
+    C 470 302 530 302 552 262
+    L 736 252
+    C 794 302 806 522 796 752
+    L 704 766
+    C 694 562 666 488 622 472
+    C 634 700 642 900 648 1112
+    C 562 1134 438 1134 352 1112
+    C 358 900 366 700 378 472
+    C 334 488 306 562 296 766
+    L 204 752
+    C 194 522 206 302 264 252
+    Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#obsidian-cashmere-overcoat-detail-ground)"/>
+  <rect width="1000" height="1250" fill="url(#obsidian-cashmere-overcoat-detail-bloom)"/>
+  <rect width="1000" height="1250" fill="url(#obsidian-cashmere-overcoat-detail-cool)"/>
+  <g transform="translate(-1226.67 -773.33) scale(3.33)">
+    <!-- Contact shadow. Without it the garment floats. -->
+    <ellipse cx="500" cy="1126" rx="210" ry="26"
+             fill="url(#obsidian-cashmere-overcoat-detail-contact)"/>
+    <!-- The garment. -->
+    <g clip-path="url(#obsidian-cashmere-overcoat-detail-clip)">
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#obsidian-cashmere-overcoat-detail-cloth)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#obsidian-cashmere-overcoat-detail-weave)"/>
+      <path d="M 316.31 200 C 296.31 560 292.25 820 280.22 1200
+                L 357.85 1200 C 369.88 820 373.95 560 393.95 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 535.23 200 C 515.23 560 564.01 820 578.4 1200
+                L 628.89 1200 C 614.5 820 565.72 560 585.72 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 678.6 200 C 658.6 560 668.38 820 663.26 1200
+                L 739.97 1200 C 745.08 820 735.3 560 755.3 200 Z"
+             fill="#c9b28d" fill-opacity="0.04"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#obsidian-cashmere-overcoat-detail-spec)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#obsidian-cashmere-overcoat-detail-round)"/>
+      <path d="
+    M 434 292 C 470 272 530 272 566 292
+    L 620 316 C 636 284 618 256 578 246
+    C 530 236 470 236 422 246
+    C 382 256 364 284 380 316
+    Z" fill="#000000" fill-opacity="0.46" fill-rule="evenodd"/><path d="
+    M 500 616
+    C 522 500 546 390 566 292
+    L 434 292
+    C 454 390 478 500 500 616
+    Z" fill="#000000" fill-opacity="0.74" fill-rule="evenodd"/><path d="
+    M 500 616
+    C 522 500 546 390 566 292
+    L 620 316 L 596 372 L 626 430
+    C 588 500 542 566 500 616
+    Z" fill="#c9b28d" fill-opacity="0.15" fill-rule="evenodd"/><path d="
+    M 500 616
+    C 478 500 454 390 434 292
+    L 380 316 L 404 372 L 374 430
+    C 412 500 458 566 500 616
+    Z" fill="#c9b28d" fill-opacity="0.15" fill-rule="evenodd"/><path d="M 366 830 L 468 824 L 468 854 L 366 860 Z" fill="#000000" fill-opacity="0.5" fill-rule="evenodd"/><path d="M 532 824 L 634 830 L 634 860 L 532 854 Z" fill="#000000" fill-opacity="0.5" fill-rule="evenodd"/><path d="M 566 486 L 622 492 L 622 508 L 566 502 Z" fill="#000000" fill-opacity="0.45" fill-rule="evenodd"/>
+    </g>
+    <!-- Rim light along the lit edge, then the construction. -->
+    <path d="
+    M 264 252
+    L 448 262
+    C 470 302 530 302 552 262
+    L 736 252
+    C 794 302 806 522 796 752
+    L 704 766
+    C 694 562 666 488 622 472
+    C 634 700 642 900 648 1112
+    C 562 1134 438 1134 352 1112
+    C 358 900 366 700 378 472
+    C 334 488 306 562 296 766
+    L 204 752
+    C 194 522 206 302 264 252
+    Z" fill="none" fill-rule="evenodd" stroke="#c9b28d"
+          stroke-opacity="0.26" stroke-width="2"/>
+    <path d="
+    M 264 252
+    L 448 262
+    C 470 302 530 302 552 262
+    L 736 252
+    C 794 302 806 522 796 752
+    L 704 766
+    C 694 562 666 488 622 472
+    C 634 700 642 900 648 1112
+    C 562 1134 438 1134 352 1112
+    C 358 900 366 700 378 472
+    C 334 488 306 562 296 766
+    L 204 752
+    C 194 522 206 302 264 252
+    Z" fill="none" fill-rule="evenodd" stroke="#000000"
+          stroke-opacity="0.4" stroke-width="1"/>
+    <g clip-path="url(#obsidian-cashmere-overcoat-detail-clip)"><path d="M 500 616 C 542 566 588 500 626 430 L 596 372 L 620 316" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 616 C 542 566 588 500 626 430 L 596 372 L 620 316" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 500 616 C 458 566 412 500 374 430 L 404 372 L 380 316" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 616 C 458 566 412 500 374 430 L 404 372 L 380 316" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 500 616 C 522 500 546 390 566 292" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 616 C 522 500 546 390 566 292" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 500 616 C 478 500 454 390 434 292" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 616 C 478 500 454 390 434 292" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 566 292 L 620 316" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 566 292 L 620 316" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 434 292 L 380 316" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 434 292 L 380 316" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 500 616 C 490 780 484 950 482 1092" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 500 616 C 490 780 484 950 482 1092" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 736 252 C 700 320 686 400 682 472" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 736 252 C 700 320 686 400 682 472" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 264 252 C 300 320 314 400 318 472" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 264 252 C 300 320 314 400 318 472" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 716 690 L 800 678" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 716 690 L 800 678" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 284 690 L 200 678" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 284 690 L 200 678" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 366 830 L 468 824" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 532 824 L 634 830" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 500 640 C 490 790 484 950 482 1082" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/></g>
+    <g>
+    <circle cx="452" cy="567.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="452" cy="566" r="15" fill="url(#horn)"/>
+    <circle cx="452" cy="566" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="447.5" cy="561.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="456.5" cy="570.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 442.7 556.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="452" cy="679.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="452" cy="678" r="15" fill="url(#horn)"/>
+    <circle cx="452" cy="678" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="447.5" cy="673.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="456.5" cy="682.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 442.7 668.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="452" cy="791.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="452" cy="790" r="15" fill="url(#horn)"/>
+    <circle cx="452" cy="790" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="447.5" cy="785.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="456.5" cy="794.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 442.7 780.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="548" cy="567.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="548" cy="566" r="15" fill="url(#horn)"/>
+    <circle cx="548" cy="566" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="543.5" cy="561.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="552.5" cy="570.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 538.7 556.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="548" cy="679.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="548" cy="678" r="15" fill="url(#horn)"/>
+    <circle cx="548" cy="678" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="543.5" cy="673.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="552.5" cy="682.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 538.7 668.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="548" cy="791.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="548" cy="790" r="15" fill="url(#horn)"/>
+    <circle cx="548" cy="790" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="543.5" cy="785.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="552.5" cy="794.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 538.7 780.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  </g>
+  <filter id="obsidian-cashmere-overcoat-detail-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1000" height="1250" filter="url(#obsidian-cashmere-overcoat-detail-grain)" opacity="0.075" style="mix-blend-mode:overlay"/>
+</svg>

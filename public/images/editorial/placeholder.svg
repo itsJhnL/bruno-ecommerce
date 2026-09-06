@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="placeholder-ground" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="50%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="placeholder-l0" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.3"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="placeholder-l1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.21"/>
+      <stop offset="52%"  stop-color="#7e96b8" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="placeholder-l2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.19"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="placeholder-l3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.25"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="placeholder-pane0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="48%"  stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#c9a96a" stop-opacity="0.13"/>
+    </linearGradient>
+    <linearGradient id="placeholder-pane1" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.15"/>
+      <stop offset="55%"  stop-color="#ffffff" stop-opacity="0.025"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="placeholder-cast" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="15"
+        stdDeviation="17.5"
+        flood-color="#3a2f1c" flood-opacity="0"/>
+    </filter>
+    <linearGradient id="placeholder-sheen" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="36%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="placeholder-caustic" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#eddcbd" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#eddcbd" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="placeholder-vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#08070a" stop-opacity="0.34"/>
+      <stop offset="38%"  stop-color="#08070a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0.72"/>
+    </linearGradient>
+    <filter id="placeholder-blur"><feGaussianBlur stdDeviation="1.5"/></filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#placeholder-ground)"/>
+  <ellipse cx="267.98" cy="166.16" rx="268.86" ry="209.71" fill="url(#placeholder-l0)"/><ellipse cx="848.81" cy="305.73" rx="280.15" ry="218.52" fill="url(#placeholder-l1)"/><ellipse cx="255.79" cy="1054.59" rx="312.73" ry="243.93" fill="url(#placeholder-l2)"/><ellipse cx="819.58" cy="856.92" rx="330.1" ry="257.48" fill="url(#placeholder-l3)"/>
+  <g filter="url(#placeholder-cast)"><g filter="url(#placeholder-blur)"><g transform="rotate(2.46 220.88 461.79)">
+      <rect x="108.08" y="100.97" width="225.59" height="721.64" rx="20.3"
+            fill="url(#placeholder-pane0)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="126.13" y="100.97" width="189.5" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="108.08" y="100.97" width="225.59" height="721.64" rx="20.3"
+            fill="url(#placeholder-sheen)" style="mix-blend-mode:screen"/>
+    </g><g transform="rotate(1 614.1 607.65)">
+      <rect x="487.16" y="177.16" width="253.89" height="860.97" rx="22.85"
+            fill="url(#placeholder-pane1)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="507.47" y="177.16" width="213.27" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="487.16" y="177.16" width="253.89" height="860.97" rx="22.85"
+            fill="url(#placeholder-sheen)" style="mix-blend-mode:screen"/>
+    </g></g></g>
+  <ellipse cx="586.89" cy="620.28" rx="38.79" ry="18.05" fill="url(#placeholder-caustic)"/><ellipse cx="782.39" cy="828.64" rx="33.13" ry="28.76" fill="url(#placeholder-caustic)"/><ellipse cx="660.36" cy="500.96" rx="60.51" ry="45.67" fill="url(#placeholder-caustic)"/>
+  <g><path d="M -40 141.86 Q 500 250.65 1040 82.02"
+      fill="none" stroke="#7e96b8" stroke-opacity="0.16" stroke-width="0.71"/><path d="M -40 210.38 Q 500 15.89 1040 317.35"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.14" stroke-width="1.44"/><path d="M -40 808.73 Q 500 616.87 1040 914.26"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.1" stroke-width="0.89"/><path d="M -40 77.64 Q 500 81.37 1040 75.59"
+      fill="none" stroke="#c9a96a" stroke-opacity="0.2" stroke-width="1.7"/><path d="M -40 425.03 Q 500 397.87 1040 439.97"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.11" stroke-width="0.98"/><path d="M -40 552.96 Q 500 579.97 1040 538.11"
+      fill="none" stroke="#7e96b8" stroke-opacity="0.2" stroke-width="0.81"/><path d="M -40 231.45 Q 500 297.41 1040 195.17"
+      fill="none" stroke="#7e96b8" stroke-opacity="0.08" stroke-width="2.01"/></g>
+  <rect width="1000" height="1250" fill="url(#placeholder-vignette)"/>
+  <rect x="18" y="18" width="964" height="1214" fill="none"
+        stroke="#e3cba0" stroke-opacity="0.08" stroke-width="1"/>
+  <filter id="placeholder-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1000" height="1250" filter="url(#placeholder-grain)" opacity="0.08" style="mix-blend-mode:overlay"/>
+  <text x="500" y="1175" font-family="Cormorant Garamond, Georgia, serif" font-size="50"
+    font-weight="300" fill="#e3cba0" fill-opacity="0.2" text-anchor="middle"
+    dominant-baseline="central" letter-spacing="0.04em">B</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img">
+  <defs>
+    <linearGradient id="sealEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#e3cba0" stop-opacity="0.9"/>
+      <stop offset="50%"  stop-color="#9a7c42" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e3cba0" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="sealFill" cx="0.4" cy="0.32" r="0.75">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0.6"/>
+    </radialGradient>
+    <path id="sealArc" d="M 100 100 m -74 0 a 74 74 0 1 1 148 0 a 74 74 0 1 1 -148 0" fill="none"/>
+  </defs>
+  <circle cx="100" cy="100" r="94" fill="url(#sealFill)"/>
+  <circle cx="100" cy="100" r="94" fill="none" stroke="url(#sealEdge)" stroke-width="1.2"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#9a7c42" stroke-opacity="0.4" stroke-width="0.6"/>
+  <text font-family="Inter Tight, Inter, sans-serif" font-size="9.5" font-weight="500"
+        fill="#e3cba0" fill-opacity="0.8" letter-spacing="0.34em">
+    <textPath href="#sealArc" startOffset="4%">MADE IN SMALL NUMBERS · FINISHED BY HAND ·</textPath>
+  </text>
+  <text x="100" y="104" font-family="Cormorant Garamond, Georgia, serif" font-size="62" font-weight="300"
+        fill="#e3cba0" text-anchor="middle" dominant-baseline="central">B</text>
+</svg>

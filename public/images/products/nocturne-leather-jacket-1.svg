@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="nocturne-leather-jacket-material-ground" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="nocturne-leather-jacket-material-bloom" cx="0.78" cy="0.14" r="0.74">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.30"/>
+      <stop offset="44%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nocturne-leather-jacket-material-cool" cx="0.12" cy="0.86" r="0.62">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7e96b8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- The cloth: shadow to body to highlight, raked from the light side. -->
+    <linearGradient id="nocturne-leather-jacket-material-cloth" x1="1" y1="0.06" x2="0" y2="0.96">
+      <stop offset="0%"   stop-color="#a8783f" stop-opacity="0.38"/>
+      <stop offset="20%"  stop-color="#432c17"/>
+      <stop offset="64%"  stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#150e09"/>
+    </linearGradient>
+    <!-- Specular band. Silk gets a hard one, suede almost none. -->
+    <linearGradient id="nocturne-leather-jacket-material-spec" x1="0.42" y1="0" x2="1.1" y2="0.72">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="44%"  stop-color="#eddcbd" stop-opacity="0.1"/>
+      <stop offset="53%"  stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="63%"  stop-color="#eddcbd" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Turns a flat fill into something with a near and a far edge. -->
+    <linearGradient id="nocturne-leather-jacket-material-round" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="66%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.1"/>
+    </linearGradient>
+    <radialGradient id="nocturne-leather-jacket-material-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Findings. Fixed ids: garments.ts refers to them by name. -->
+    <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#eddcbd"/>
+      <stop offset="42%"  stop-color="#c9a96a"/>
+      <stop offset="100%" stop-color="#9a7c42"/>
+    </linearGradient>
+    <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0%"   stop-color="#a8783f" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#150e09"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%"   stop-color="#a8783f"/>
+      <stop offset="50%"  stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#150e09"/>
+    </linearGradient>
+    <pattern id="nocturne-leather-jacket-material-weave" width="30" height="26" patternUnits="userSpaceOnUse">
+        <ellipse cx="8" cy="7" rx="6.2" ry="4.8" fill="#a8783f" fill-opacity="0.09"/>
+        <ellipse cx="22" cy="19" rx="7.4" ry="5.2" fill="#a8783f" fill-opacity="0.07"/>
+        <ellipse cx="24" cy="5" rx="4.2" ry="3.6" fill="#000000" fill-opacity="0.16"/>
+        <ellipse cx="6" cy="21" rx="5" ry="4" fill="#000000" fill-opacity="0.13"/>
+      </pattern>
+    <clipPath id="nocturne-leather-jacket-material-clip"><path d="
+    M 270 276
+    L 452 284
+    C 476 330 524 330 548 284
+    L 730 276
+    C 786 322 802 512 794 700
+    L 706 716
+    C 698 552 672 490 620 474
+    C 630 636 636 760 640 856
+    C 592 878 548 886 500 886
+    C 452 886 408 878 360 856
+    C 364 760 370 636 380 474
+    C 328 490 302 552 294 716
+    L 206 700
+    C 198 512 214 322 270 276
+    Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#nocturne-leather-jacket-material-ground)"/>
+  <rect width="1000" height="1250" fill="url(#nocturne-leather-jacket-material-bloom)"/>
+  <rect width="1000" height="1250" fill="url(#nocturne-leather-jacket-material-cool)"/>
+  <g >
+    <!-- Contact shadow. Without it the garment floats. -->
+    <ellipse cx="500" cy="896" rx="180" ry="22"
+             fill="url(#nocturne-leather-jacket-material-contact)"/>
+    <!-- The garment. -->
+    <g clip-path="url(#nocturne-leather-jacket-material-clip)">
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#nocturne-leather-jacket-material-cloth)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#nocturne-leather-jacket-material-weave)"/>
+      <path d="M 228.69 200 C 208.69 560 199.05 820 184.22 1200
+                L 235.11 1200 C 249.93 820 259.57 560 279.57 200 Z"
+             fill="#a8783f" fill-opacity="0.08"/><path d="M 403.62 200 C 383.62 560 400.42 820 398.82 1200
+                L 472.81 1200 C 474.41 820 457.61 560 477.61 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 585.66 200 C 565.66 560 557.39 820 543.26 1200
+                L 594.58 1200 C 608.71 820 616.97 560 636.97 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 756.52 200 C 736.52 560 738.76 820 729.88 1200
+                L 811.83 1200 C 820.71 820 818.47 560 838.47 200 Z"
+             fill="#000000" fill-opacity="0.15"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#nocturne-leather-jacket-material-spec)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#nocturne-leather-jacket-material-round)"/>
+      <path d="M 548 288 L 618 272 C 640 306 638 348 620 380 L 556 356 Z" fill="#a8783f" fill-opacity="0.14" fill-rule="evenodd"/><path d="M 452 288 L 382 272 C 360 306 362 348 380 380 L 444 356 Z" fill="#000000" fill-opacity="0.32" fill-rule="evenodd"/><path d="M 556 356 C 592 480 600 660 598 858 L 528 872 C 524 660 528 476 500 352 Z" fill="#a8783f" fill-opacity="0.1" fill-rule="evenodd"/><path d="M 386 690 L 470 706 L 464 730 L 380 714 Z" fill="#000000" fill-opacity="0.45" fill-rule="evenodd"/><path d="M 614 690 L 700 674 L 706 698 L 620 714 Z" fill="#000000" fill-opacity="0.45" fill-rule="evenodd"/><path d="M 360 838 C 452 862 548 862 640 838 L 644 872 C 548 896 452 896 356 872 Z" fill="#000000" fill-opacity="0.42" fill-rule="evenodd"/>
+    </g>
+    <!-- Rim light along the lit edge, then the construction. -->
+    <path d="
+    M 270 276
+    L 452 284
+    C 476 330 524 330 548 284
+    L 730 276
+    C 786 322 802 512 794 700
+    L 706 716
+    C 698 552 672 490 620 474
+    C 630 636 636 760 640 856
+    C 592 878 548 886 500 886
+    C 452 886 408 878 360 856
+    C 364 760 370 636 380 474
+    C 328 490 302 552 294 716
+    L 206 700
+    C 198 512 214 322 270 276
+    Z" fill="none" fill-rule="evenodd" stroke="#a8783f"
+          stroke-opacity="0.26" stroke-width="2"/>
+    <path d="
+    M 270 276
+    L 452 284
+    C 476 330 524 330 548 284
+    L 730 276
+    C 786 322 802 512 794 700
+    L 706 716
+    C 698 552 672 490 620 474
+    C 630 636 636 760 640 856
+    C 592 878 548 886 500 886
+    C 452 886 408 878 360 856
+    C 364 760 370 636 380 474
+    C 328 490 302 552 294 716
+    L 206 700
+    C 198 512 214 322 270 276
+    Z" fill="none" fill-rule="evenodd" stroke="#000000"
+          stroke-opacity="0.4" stroke-width="1"/>
+    <g clip-path="url(#nocturne-leather-jacket-material-clip)"><path d="M 620 380 C 656 500 668 660 672 838" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 620 380 C 656 500 668 660 672 838" fill="none" stroke="#a8783f" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 380 380 C 344 500 332 660 328 838" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 380 380 C 344 500 332 660 328 838" fill="none" stroke="#a8783f" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 730 276 C 700 340 686 412 684 474" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 730 276 C 700 340 686 412 684 474" fill="none" stroke="#a8783f" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 270 276 C 300 340 314 412 316 474" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 270 276 C 300 340 314 412 316 474" fill="none" stroke="#a8783f" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 300 470 C 400 440 600 440 700 470" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 300 470 C 400 440 600 440 700 470" fill="none" stroke="#a8783f" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 386 690 L 470 706" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 614 690 L 700 674" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 360 846 C 452 870 548 870 640 846" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/></g>
+    <g>
+    <path d="M 528 372 C 552 520 558 690 556 856" fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="10.35" stroke-linecap="round"/>
+    <path d="M 528 372 C 552 520 558 690 556 856" fill="none" stroke="url(#brass)" stroke-opacity="0.9" stroke-width="5.75" stroke-linecap="round"/>
+    <path d="M 528 372 C 552 520 558 690 556 856" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="5.75"
+          stroke-dasharray="2.76 3.6799999999999997" stroke-linecap="butt"/>
+    <g transform="translate(556 700)">
+             <rect x="-8.049999999999999" y="-10.35" width="16.099999999999998" height="20.7"
+                   rx="3.4499999999999997" fill="url(#brass)" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+             <rect x="-3.9099999999999997" y="8.049999999999999" width="7.819999999999999" height="34.5"
+                   rx="3.9099999999999997" fill="none" stroke="url(#brass)" stroke-width="3.9099999999999997"/>
+           </g>
+  </g><g>
+    <path d="M 380 714 L 464 730" fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="7.2" stroke-linecap="round"/>
+    <path d="M 380 714 L 464 730" fill="none" stroke="url(#brass)" stroke-opacity="0.9" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 380 714 L 464 730" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="4"
+          stroke-dasharray="1.92 2.5600000000000005" stroke-linecap="butt"/>
+  </g><g>
+    <path d="M 620 714 L 706 698" fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="7.2" stroke-linecap="round"/>
+    <path d="M 620 714 L 706 698" fill="none" stroke="url(#brass)" stroke-opacity="0.9" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 620 714 L 706 698" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="4"
+          stroke-dasharray="1.92 2.5600000000000005" stroke-linecap="butt"/>
+  </g><g>
+    <path d="M 712 690 L 786 678" fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="7.2" stroke-linecap="round"/>
+    <path d="M 712 690 L 786 678" fill="none" stroke="url(#brass)" stroke-opacity="0.9" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 712 690 L 786 678" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="4"
+          stroke-dasharray="1.92 2.5600000000000005" stroke-linecap="butt"/>
+  </g><g>
+    <path d="M 288 690 L 214 678" fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="7.2" stroke-linecap="round"/>
+    <path d="M 288 690 L 214 678" fill="none" stroke="url(#brass)" stroke-opacity="0.9" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 288 690 L 214 678" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="4"
+          stroke-dasharray="1.92 2.5600000000000005" stroke-linecap="butt"/>
+  </g><circle cx="612" cy="366" r="8" fill="url(#brass)" stroke="#000" stroke-opacity="0.4"/><circle cx="388" cy="366" r="8" fill="url(#brass)" stroke="#000" stroke-opacity="0.4"/>
+  </g>
+  <filter id="nocturne-leather-jacket-material-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1000" height="1250" filter="url(#nocturne-leather-jacket-material-grain)" opacity="0.075" style="mix-blend-mode:overlay"/>
+  <text x="926" y="1198" font-family="Cormorant Garamond, Georgia, serif" font-size="22"
+    font-weight="300" fill="#e3cba0" fill-opacity="0.16" text-anchor="middle"
+    dominant-baseline="central" letter-spacing="0.04em">B</text>
+</svg>

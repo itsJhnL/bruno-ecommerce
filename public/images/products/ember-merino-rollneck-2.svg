@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ember-merino-rollneck-detail-ground" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="ember-merino-rollneck-detail-bloom" cx="0.22" cy="0.14" r="0.74">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.30"/>
+      <stop offset="44%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ember-merino-rollneck-detail-cool" cx="0.88" cy="0.86" r="0.62">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7e96b8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- The cloth: shadow to body to highlight, raked from the light side. -->
+    <linearGradient id="ember-merino-rollneck-detail-cloth" x1="0" y1="0.06" x2="1" y2="0.96">
+      <stop offset="0%"   stop-color="#c0936a" stop-opacity="0.38"/>
+      <stop offset="20%"  stop-color="#563820"/>
+      <stop offset="64%"  stop-color="#563820"/>
+      <stop offset="100%" stop-color="#1b120d"/>
+    </linearGradient>
+    <!-- Specular band. Silk gets a hard one, suede almost none. -->
+    <linearGradient id="ember-merino-rollneck-detail-spec" x1="-0.1" y1="0" x2="0.58" y2="0.72">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="44%"  stop-color="#eddcbd" stop-opacity="0.05"/>
+      <stop offset="53%"  stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="63%"  stop-color="#eddcbd" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Turns a flat fill into something with a near and a far edge. -->
+    <linearGradient id="ember-merino-rollneck-detail-round" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="34%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="ember-merino-rollneck-detail-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Findings. Fixed ids: garments.ts refers to them by name. -->
+    <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#eddcbd"/>
+      <stop offset="42%"  stop-color="#c9a96a"/>
+      <stop offset="100%" stop-color="#9a7c42"/>
+    </linearGradient>
+    <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0%"   stop-color="#c0936a" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#1b120d"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%"   stop-color="#a8783f"/>
+      <stop offset="50%"  stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#150e09"/>
+    </linearGradient>
+    <pattern id="ember-merino-rollneck-detail-weave" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+        <line x1="0" y1="6"     x2="30" y2="8.4" stroke="#c0936a" stroke-opacity="0.11" stroke-width="2.04"/>
+        <line x1="0" y1="15.6" x2="30" y2="13.2" stroke="#000000" stroke-opacity="0.14" stroke-width="3"/>
+        <line x1="0" y1="24" x2="30" y2="26.4" stroke="#c0936a" stroke-opacity="0.08" stroke-width="1.68"/>
+      </pattern>
+    <clipPath id="ember-merino-rollneck-detail-clip"><path d="M 300 316
+       C 448 292 448 216 456 190
+       C 500 172 546 176 580 194
+       C 592 220 578 286 552 316
+       L 700 316
+       C 764 352 794 524 796 694
+       L 706 710
+       C 700 566 670 494 602 478
+       C 608 626 612 764 612 856
+       C 540 878 460 878 388 856
+       C 388 764 392 626 398 478
+       C 330 494 300 566 294 710
+       L 204 694
+       C 206 524 236 352 300 316
+       Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#ember-merino-rollneck-detail-ground)"/>
+  <rect width="1000" height="1250" fill="url(#ember-merino-rollneck-detail-bloom)"/>
+  <rect width="1000" height="1250" fill="url(#ember-merino-rollneck-detail-cool)"/>
+  <g transform="translate(-1233.33 -560) scale(3.33)">
+    <!-- Contact shadow. Without it the garment floats. -->
+    <ellipse cx="500" cy="886" rx="178" ry="22"
+             fill="url(#ember-merino-rollneck-detail-contact)"/>
+    <!-- The garment. -->
+    <g clip-path="url(#ember-merino-rollneck-detail-clip)">
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#ember-merino-rollneck-detail-cloth)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#ember-merino-rollneck-detail-weave)"/>
+      <path d="M 240.15 200 C 220.15 560 215.4 820 203.02 1200
+                L 297.32 1200 C 309.7 820 314.45 560 334.45 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 480.43 200 C 460.43 560 466.72 820 459.87 1200
+                L 521.59 1200 C 528.44 820 522.15 560 542.15 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 676.07 200 C 656.07 560 684.53 820 688.76 1200
+                L 775.66 1200 C 771.43 820 742.97 560 762.97 200 Z"
+             fill="#000000" fill-opacity="0.15"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#ember-merino-rollneck-detail-spec)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#ember-merino-rollneck-detail-round)"/>
+      <path d="M 456 190 C 500 172 546 176 580 194 C 592 220 578 286 552 316
+       C 500 330 452 328 448 316 C 448 292 448 216 456 190 Z" fill="#000000" fill-opacity="0.34" fill-rule="evenodd"/><path d="M 462 196 C 500 180 542 184 574 200 C 546 224 468 222 462 196 Z" fill="#000000" fill-opacity="0.82" fill-rule="evenodd"/><path d="M 388 802 C 460 816 540 816 612 802
+            C 612 846 612 856 612 856
+            C 540 878 460 878 388 856 Z" fill="#000000" fill-opacity="0.3" fill-rule="evenodd"/><path d="M 706 660 L 796 646 L 796 694 L 706 710 Z" fill="#000000" fill-opacity="0.3" fill-rule="evenodd"/><path d="M 294 660 L 204 646 L 204 694 L 294 710 Z" fill="#000000" fill-opacity="0.3" fill-rule="evenodd"/>
+      <line x1="391" y1="804" x2="391" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="397" y1="804" x2="397" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="404" y1="804" x2="404" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="410" y1="804" x2="410" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="417" y1="804" x2="417" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="423" y1="804" x2="423" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="430" y1="804" x2="430" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="436" y1="804" x2="436" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="443" y1="804" x2="443" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="449" y1="804" x2="449" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="456" y1="804" x2="456" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="462" y1="804" x2="462" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="469" y1="804" x2="469" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="475" y1="804" x2="475" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="482" y1="804" x2="482" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="488" y1="804" x2="488" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="495" y1="804" x2="495" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="501" y1="804" x2="501" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="508" y1="804" x2="508" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="514" y1="804" x2="514" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="521" y1="804" x2="521" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="527" y1="804" x2="527" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="534" y1="804" x2="534" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="540" y1="804" x2="540" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="547" y1="804" x2="547" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="553" y1="804" x2="553" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="560" y1="804" x2="560" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="566" y1="804" x2="566" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="573" y1="804" x2="573" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="579" y1="804" x2="579" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="586" y1="804" x2="586" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="592" y1="804" x2="592" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="599" y1="804" x2="599" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="605" y1="804" x2="605" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="612" y1="804" x2="612" y2="882" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="618" y1="804" x2="618" y2="882" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><g transform="rotate(-9 750 678)"><line x1="706" y1="646" x2="706" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="711" y1="646" x2="711" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="717" y1="646" x2="717" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="722" y1="646" x2="722" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="728" y1="646" x2="728" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="733" y1="646" x2="733" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="739" y1="646" x2="739" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="744" y1="646" x2="744" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="750" y1="646" x2="750" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="755" y1="646" x2="755" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="761" y1="646" x2="761" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="766" y1="646" x2="766" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="772" y1="646" x2="772" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="777" y1="646" x2="777" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="783" y1="646" x2="783" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="788" y1="646" x2="788" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="794" y1="646" x2="794" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="799" y1="646" x2="799" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/></g><g transform="rotate(9 250 678)"><line x1="202" y1="646" x2="202" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="207" y1="646" x2="207" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="213" y1="646" x2="213" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="218" y1="646" x2="218" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="224" y1="646" x2="224" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="229" y1="646" x2="229" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="235" y1="646" x2="235" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="240" y1="646" x2="240" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="246" y1="646" x2="246" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="251" y1="646" x2="251" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="257" y1="646" x2="257" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="262" y1="646" x2="262" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="268" y1="646" x2="268" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="273" y1="646" x2="273" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="279" y1="646" x2="279" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="284" y1="646" x2="284" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/><line x1="290" y1="646" x2="290" y2="712" stroke="#000" stroke-opacity="0.30" stroke-width="3"/><line x1="295" y1="646" x2="295" y2="712" stroke="#fff" stroke-opacity="0.09" stroke-width="2"/></g>
+    </g>
+    <!-- Rim light along the lit edge, then the construction. -->
+    <path d="M 300 316
+       C 448 292 448 216 456 190
+       C 500 172 546 176 580 194
+       C 592 220 578 286 552 316
+       L 700 316
+       C 764 352 794 524 796 694
+       L 706 710
+       C 700 566 670 494 602 478
+       C 608 626 612 764 612 856
+       C 540 878 460 878 388 856
+       C 388 764 392 626 398 478
+       C 330 494 300 566 294 710
+       L 204 694
+       C 206 524 236 352 300 316
+       Z" fill="none" fill-rule="evenodd" stroke="#c0936a"
+          stroke-opacity="0.26" stroke-width="2"/>
+    <path d="M 300 316
+       C 448 292 448 216 456 190
+       C 500 172 546 176 580 194
+       C 592 220 578 286 552 316
+       L 700 316
+       C 764 352 794 524 796 694
+       L 706 710
+       C 700 566 670 494 602 478
+       C 608 626 612 764 612 856
+       C 540 878 460 878 388 856
+       C 388 764 392 626 398 478
+       C 330 494 300 566 294 710
+       L 204 694
+       C 206 524 236 352 300 316
+       Z" fill="none" fill-rule="evenodd" stroke="#000000"
+          stroke-opacity="0.4" stroke-width="1"/>
+    <g clip-path="url(#ember-merino-rollneck-detail-clip)"><path d="M 668 322 C 640 384 620 430 612 480" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 668 322 C 640 384 620 430 612 480" fill="none" stroke="#c0936a" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 332 322 C 360 384 380 430 388 480" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 332 322 C 360 384 380 430 388 480" fill="none" stroke="#c0936a" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/></g>
+  </g>
+  <filter id="ember-merino-rollneck-detail-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1000" height="1250" filter="url(#ember-merino-rollneck-detail-grain)" opacity="0.075" style="mix-blend-mode:overlay"/>
+</svg>

@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="journal-atelier-ground" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="50%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="journal-atelier-l0" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.24"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="journal-atelier-l1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.4"/>
+      <stop offset="52%"  stop-color="#7e96b8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="journal-atelier-l2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.33"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="journal-atelier-l3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.32"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="journal-atelier-pane0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="48%"  stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#c9a96a" stop-opacity="0.13"/>
+    </linearGradient>
+    <linearGradient id="journal-atelier-pane1" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.15"/>
+      <stop offset="55%"  stop-color="#ffffff" stop-opacity="0.025"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="journal-atelier-cast" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16.8"
+        stdDeviation="19.6"
+        flood-color="#3a2f1c" flood-opacity="0"/>
+    </filter>
+    <linearGradient id="journal-atelier-sheen" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="36%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="journal-atelier-caustic" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#eddcbd" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#eddcbd" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="journal-atelier-vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#08070a" stop-opacity="0.34"/>
+      <stop offset="38%"  stop-color="#08070a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0.72"/>
+    </linearGradient>
+    <filter id="journal-atelier-blur"><feGaussianBlur stdDeviation="1.68"/></filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#journal-atelier-ground)"/>
+  <ellipse cx="345.92" cy="194.34" rx="257.76" ry="201.05" fill="url(#journal-atelier-l0)"/><ellipse cx="1111.37" cy="198.94" rx="343.61" ry="268.02" fill="url(#journal-atelier-l1)"/><ellipse cx="482.62" cy="727.86" rx="433.89" ry="338.43" fill="url(#journal-atelier-l2)"/><ellipse cx="1113.58" cy="690.4" rx="420.51" ry="328" fill="url(#journal-atelier-l3)"/>
+  <g filter="url(#journal-atelier-cast)"><g filter="url(#journal-atelier-blur)"><g transform="rotate(5.69 289.19 465.58)">
+      <rect x="106.21" y="94.71" width="365.95" height="741.75" rx="32.94"
+            fill="url(#journal-atelier-pane0)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="135.49" y="94.71" width="307.4" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="106.21" y="94.71" width="365.95" height="741.75" rx="32.94"
+            fill="url(#journal-atelier-sheen)" style="mix-blend-mode:screen"/>
+    </g><g transform="rotate(4.16 700.72 343.86)">
+      <rect x="491.69" y="130.33" width="418.06" height="427.06" rx="37.63"
+            fill="url(#journal-atelier-pane1)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="525.13" y="130.33" width="351.17" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="491.69" y="130.33" width="418.06" height="427.06" rx="37.63"
+            fill="url(#journal-atelier-sheen)" style="mix-blend-mode:screen"/>
+    </g><g transform="rotate(4.52 954.14 318.11)">
+      <rect x="793.2" y="76.66" width="321.89" height="482.91" rx="28.97"
+            fill="url(#journal-atelier-pane0)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="818.95" y="76.66" width="270.38" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="793.2" y="76.66" width="321.89" height="482.91" rx="28.97"
+            fill="url(#journal-atelier-sheen)" style="mix-blend-mode:screen"/>
+    </g></g></g>
+  <ellipse cx="434.84" cy="251.46" rx="51.31" ry="48.83" fill="url(#journal-atelier-caustic)"/><ellipse cx="234.52" cy="236.74" rx="66.32" ry="60.76" fill="url(#journal-atelier-caustic)"/><ellipse cx="766.7" cy="153.84" rx="103.32" ry="65.29" fill="url(#journal-atelier-caustic)"/>
+  <g><path d="M -56 187.12 Q 700 67.36 1456 252.99"
+      fill="none" stroke="#7e96b8" stroke-opacity="0.18" stroke-width="1.97"/><path d="M -56 508.19 Q 700 546.55 1456 487.09"
+      fill="none" stroke="#7e96b8" stroke-opacity="0.08" stroke-width="1.16"/><path d="M -56 302.6 Q 700 199.24 1456 359.45"
+      fill="none" stroke="#c9a96a" stroke-opacity="0.12" stroke-width="1.41"/><path d="M -56 764.22 Q 700 740.05 1456 777.51"
+      fill="none" stroke="#7e96b8" stroke-opacity="0.14" stroke-width="0.73"/><path d="M -56 240.58 Q 700 419.86 1456 141.97"
+      fill="none" stroke="#c9a96a" stroke-opacity="0.17" stroke-width="0.81"/><path d="M -56 702.51 Q 700 546.15 1456 788.51"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.13" stroke-width="0.97"/><path d="M -56 614.97 Q 700 610.85 1456 617.24"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.07" stroke-width="1.79"/></g>
+  <rect width="1400" height="900" fill="url(#journal-atelier-vignette)"/>
+  <rect x="18" y="18" width="1364" height="864" fill="none"
+        stroke="#e3cba0" stroke-opacity="0.08" stroke-width="1"/>
+  <filter id="journal-atelier-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1400" height="900" filter="url(#journal-atelier-grain)" opacity="0.08" style="mix-blend-mode:overlay"/>
+  <text x="700" y="846" font-family="Cormorant Garamond, Georgia, serif" font-size="45"
+    font-weight="300" fill="#e3cba0" fill-opacity="0.2" text-anchor="middle"
+    dominant-baseline="central" letter-spacing="0.04em">B</text>
+</svg>

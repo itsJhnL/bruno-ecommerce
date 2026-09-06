@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="solstice-suede-weekender-detail-ground" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="solstice-suede-weekender-detail-bloom" cx="0.22" cy="0.14" r="0.74">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.30"/>
+      <stop offset="44%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="solstice-suede-weekender-detail-cool" cx="0.88" cy="0.86" r="0.62">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7e96b8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- The cloth: shadow to body to highlight, raked from the light side. -->
+    <linearGradient id="solstice-suede-weekender-detail-cloth" x1="0" y1="0.06" x2="1" y2="0.96">
+      <stop offset="0%"   stop-color="#a37f4f" stop-opacity="0.38"/>
+      <stop offset="20%"  stop-color="#4c331c"/>
+      <stop offset="64%"  stop-color="#4c331c"/>
+      <stop offset="100%" stop-color="#191108"/>
+    </linearGradient>
+    <!-- Specular band. Silk gets a hard one, suede almost none. -->
+    <linearGradient id="solstice-suede-weekender-detail-spec" x1="-0.1" y1="0" x2="0.58" y2="0.72">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="44%"  stop-color="#eddcbd" stop-opacity="0.03"/>
+      <stop offset="53%"  stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="63%"  stop-color="#eddcbd" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Turns a flat fill into something with a near and a far edge. -->
+    <linearGradient id="solstice-suede-weekender-detail-round" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="34%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="solstice-suede-weekender-detail-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Findings. Fixed ids: garments.ts refers to them by name. -->
+    <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#eddcbd"/>
+      <stop offset="42%"  stop-color="#c9a96a"/>
+      <stop offset="100%" stop-color="#9a7c42"/>
+    </linearGradient>
+    <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0%"   stop-color="#a37f4f" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#191108"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%"   stop-color="#a8783f"/>
+      <stop offset="50%"  stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#150e09"/>
+    </linearGradient>
+    <pattern id="solstice-suede-weekender-detail-weave" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(54)">
+        <line x1="0" y1="0" x2="0" y2="24" stroke="#a37f4f" stroke-opacity="0.07" stroke-width="6"/>
+        <line x1="12" y1="0" x2="12" y2="24" stroke="#000000" stroke-opacity="0.09" stroke-width="8.4"/>
+      </pattern>
+    <clipPath id="solstice-suede-weekender-detail-clip"><path d="
+    M 236 552
+    C 236 512 268 486 314 484
+    L 686 484
+    C 732 486 764 512 764 552
+    C 776 660 776 774 760 862
+    C 754 902 716 924 664 926
+    L 336 926
+    C 284 924 246 902 240 862
+    C 224 774 224 660 236 552
+    Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#solstice-suede-weekender-detail-ground)"/>
+  <rect width="1000" height="1250" fill="url(#solstice-suede-weekender-detail-bloom)"/>
+  <rect width="1000" height="1250" fill="url(#solstice-suede-weekender-detail-cool)"/>
+  <g transform="translate(-1273.33 -1333.33) scale(3.33)">
+    <!-- Contact shadow. Without it the garment floats. -->
+    <ellipse cx="500" cy="936" rx="260" ry="28"
+             fill="url(#solstice-suede-weekender-detail-contact)"/>
+    <!-- The garment. -->
+    <g clip-path="url(#solstice-suede-weekender-detail-clip)">
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#solstice-suede-weekender-detail-cloth)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#solstice-suede-weekender-detail-weave)"/>
+      <path d="M 311.87 200 C 291.87 560 284.9 820 271.42 1200
+                L 350.35 1200 C 363.84 820 370.81 560 390.81 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 504.01 200 C 484.01 560 527.58 820 539.36 1200
+                L 598.3 1200 C 586.52 820 542.95 560 562.95 200 Z"
+             fill="#a37f4f" fill-opacity="0.02"/><path d="M 698.05 200 C 678.05 560 690.65 820 686.95 1200
+                L 767.81 1200 C 771.51 820 758.9 560 778.9 200 Z"
+             fill="#a37f4f" fill-opacity="0.02"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#solstice-suede-weekender-detail-spec)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#solstice-suede-weekender-detail-round)"/>
+      <path d="M 686 484 C 732 486 764 512 764 552 C 776 660 776 774 760 862 C 754 902 716 924 664 926 C 700 890 710 700 700 552 C 698 512 694 496 686 484 Z" fill="#000000" fill-opacity="0.38" fill-rule="evenodd"/><path d="M 236 552 C 236 512 268 486 314 484 L 686 484 C 732 486 764 512 764 552 C 640 528 360 528 236 552 Z" fill="#000000" fill-opacity="0.3" fill-rule="evenodd"/><path d="M 240 830 C 400 872 600 872 760 830 C 756 878 750 902 736 914 L 264 914 C 250 902 244 878 240 830 Z" fill="#000000" fill-opacity="0.3" fill-rule="evenodd"/><path d="M 412 380 L 436 380 L 436 452 L 412 452 Z" fill="#a37f4f" fill-opacity="0.12" fill-rule="evenodd"/><path d="M 564 380 L 588 380 L 588 452 L 564 452 Z" fill="#a37f4f" fill-opacity="0.12" fill-rule="evenodd"/>
+    </g>
+    <!-- Rim light along the lit edge, then the construction. -->
+    <path d="
+    M 236 552
+    C 236 512 268 486 314 484
+    L 686 484
+    C 732 486 764 512 764 552
+    C 776 660 776 774 760 862
+    C 754 902 716 924 664 926
+    L 336 926
+    C 284 924 246 902 240 862
+    C 224 774 224 660 236 552
+    Z" fill="none" fill-rule="evenodd" stroke="#a37f4f"
+          stroke-opacity="0.26" stroke-width="2"/>
+    <path d="
+    M 236 552
+    C 236 512 268 486 314 484
+    L 686 484
+    C 732 486 764 512 764 552
+    C 776 660 776 774 760 862
+    C 754 902 716 924 664 926
+    L 336 926
+    C 284 924 246 902 240 862
+    C 224 774 224 660 236 552
+    Z" fill="none" fill-rule="evenodd" stroke="#000000"
+          stroke-opacity="0.4" stroke-width="1"/>
+    <g clip-path="url(#solstice-suede-weekender-detail-clip)"><path d="M 314 484 C 300 660 300 800 316 922" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 314 484 C 300 660 300 800 316 922" fill="none" stroke="#a37f4f" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 686 484 C 700 660 700 800 684 922" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 686 484 C 700 660 700 800 684 922" fill="none" stroke="#a37f4f" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 240 560 C 400 536 600 536 760 560" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 240 560 C 400 536 600 536 760 560" fill="none" stroke="#a37f4f" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 250 566 C 400 544 600 544 750 566" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 256 856 C 400 890 600 890 744 856" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 322 496 C 310 664 310 796 324 912" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 678 496 C 690 664 690 796 676 912" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/></g>
+      <g>
+    <path d="M 258 544 C 400 522 600 522 742 544" fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="10.799999999999999" stroke-linecap="round"/>
+    <path d="M 258 544 C 400 522 600 522 742 544" fill="none" stroke="url(#brass)" stroke-opacity="0.9" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 258 544 C 400 522 600 522 742 544" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="6"
+          stroke-dasharray="2.88 3.84" stroke-linecap="butt"/>
+    <g transform="translate(500 528)">
+             <rect x="-8.4" y="-10.799999999999999" width="16.8" height="21.599999999999998"
+                   rx="3.5999999999999996" fill="url(#brass)" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+             <rect x="-4.08" y="8.4" width="8.16" height="36"
+                   rx="4.08" fill="none" stroke="url(#brass)" stroke-width="4.08"/>
+           </g>
+  </g>
+      <g fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="21" stroke-linecap="round">
+        <path d="M 424 452 C 420 336 468 292 500 292 C 532 292 580 336 576 452"/>
+      </g>
+      <g fill="none" stroke="url(#leatherStrap)" stroke-width="15" stroke-linecap="round">
+        <path d="M 424 448 C 420 332 468 288 500 288 C 532 288 580 332 576 448"/>
+      </g>
+      <g fill="none" stroke="#fff" stroke-opacity="0.12" stroke-width="3.5" stroke-linecap="round">
+        <path d="M 428 440 C 424 336 470 296 500 296"/>
+      </g>
+      <circle cx="424" cy="470" r="13" fill="url(#brass)" stroke="#000" stroke-opacity="0.45"/>
+      <circle cx="576" cy="470" r="13" fill="url(#brass)" stroke="#000" stroke-opacity="0.45"/>
+      <rect x="250" y="612" width="26" height="46" rx="8" fill="url(#brass)" stroke="#000" stroke-opacity="0.4"/>
+      <rect x="724" y="612" width="26" height="46" rx="8" fill="url(#brass)" stroke="#000" stroke-opacity="0.4"/>
+  </g>
+  <filter id="solstice-suede-weekender-detail-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1000" height="1250" filter="url(#solstice-suede-weekender-detail-grain)" opacity="0.075" style="mix-blend-mode:overlay"/>
+</svg>

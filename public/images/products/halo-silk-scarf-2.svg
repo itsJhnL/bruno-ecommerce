@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="halo-silk-scarf-detail-ground" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="halo-silk-scarf-detail-bloom" cx="0.22" cy="0.14" r="0.74">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.30"/>
+      <stop offset="44%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo-silk-scarf-detail-cool" cx="0.88" cy="0.86" r="0.62">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7e96b8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- The cloth: shadow to body to highlight, raked from the light side. -->
+    <linearGradient id="halo-silk-scarf-detail-cloth" x1="0" y1="0.06" x2="1" y2="0.96">
+      <stop offset="0%"   stop-color="#ded2c2" stop-opacity="0.38"/>
+      <stop offset="20%"  stop-color="#544d5c"/>
+      <stop offset="64%"  stop-color="#544d5c"/>
+      <stop offset="100%" stop-color="#191720"/>
+    </linearGradient>
+    <!-- Specular band. Silk gets a hard one, suede almost none. -->
+    <linearGradient id="halo-silk-scarf-detail-spec" x1="-0.1" y1="0" x2="0.58" y2="0.72">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="44%"  stop-color="#eddcbd" stop-opacity="0.15"/>
+      <stop offset="53%"  stop-color="#ffffff" stop-opacity="0.23"/>
+      <stop offset="63%"  stop-color="#eddcbd" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Turns a flat fill into something with a near and a far edge. -->
+    <linearGradient id="halo-silk-scarf-detail-round" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="34%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="halo-silk-scarf-detail-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Findings. Fixed ids: garments.ts refers to them by name. -->
+    <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#eddcbd"/>
+      <stop offset="42%"  stop-color="#c9a96a"/>
+      <stop offset="100%" stop-color="#9a7c42"/>
+    </linearGradient>
+    <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0%"   stop-color="#ded2c2" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#191720"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%"   stop-color="#a8783f"/>
+      <stop offset="50%"  stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#150e09"/>
+    </linearGradient>
+    <pattern id="halo-silk-scarf-detail-weave" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+        <line x1="0" y1="0" x2="0" y2="24" stroke="#ded2c2" stroke-opacity="0.10" stroke-width="3.2"/>
+        <line x1="12" y1="0" x2="12" y2="24" stroke="#000000" stroke-opacity="0.10" stroke-width="4.8"/>
+      </pattern>
+    <clipPath id="halo-silk-scarf-detail-clip"><path d="
+    M 446 258
+    C 400 268 372 300 366 344
+    C 340 500 300 700 258 914
+    L 408 954
+    C 440 720 468 520 492 372
+    C 516 520 544 720 576 954
+    L 726 914
+    C 684 700 644 500 618 344
+    C 612 300 584 268 538 258
+    C 566 300 570 336 556 366
+    C 534 306 466 306 444 366
+    C 430 336 434 300 446 258
+    Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#halo-silk-scarf-detail-ground)"/>
+  <rect width="1000" height="1250" fill="url(#halo-silk-scarf-detail-bloom)"/>
+  <rect width="1000" height="1250" fill="url(#halo-silk-scarf-detail-cool)"/>
+  <g transform="translate(-1306.67 -833.33) scale(3.33)">
+    <!-- Contact shadow. Without it the garment floats. -->
+    <ellipse cx="500" cy="1000" rx="240" ry="24"
+             fill="url(#halo-silk-scarf-detail-contact)"/>
+    <!-- The garment. -->
+    <g clip-path="url(#halo-silk-scarf-detail-clip)">
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#halo-silk-scarf-detail-cloth)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#halo-silk-scarf-detail-weave)"/>
+      <path d="M 236.76 200 C 216.76 560 256.55 820 266.45 1200
+                L 316.38 1200 C 306.49 820 266.69 560 286.69 200 Z"
+             fill="#ded2c2" fill-opacity="0.11"/><path d="M 508.14 200 C 488.14 560 488.41 820 478.55 1200
+                L 545.25 1200 C 555.12 820 554.84 560 574.84 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 681.59 200 C 661.59 560 696.13 820 703.4 1200
+                L 771.51 1200 C 764.24 820 729.7 560 749.7 200 Z"
+             fill="#000000" fill-opacity="0.15"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#halo-silk-scarf-detail-spec)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#halo-silk-scarf-detail-round)"/>
+      <path d="M 444 366 C 466 306 534 306 556 366
+            C 534 336 466 336 444 366 Z" fill="#000000" fill-opacity="0.55" fill-rule="evenodd"/><path d="M 492 372 C 516 520 544 720 576 954
+            L 726 914 C 684 700 644 500 618 344
+            C 612 300 584 268 538 258 C 566 300 570 336 556 366 Z" fill="#ded2c2" fill-opacity="0.1" fill-rule="evenodd"/>
+    </g>
+    <!-- Rim light along the lit edge, then the construction. -->
+    <path d="
+    M 446 258
+    C 400 268 372 300 366 344
+    C 340 500 300 700 258 914
+    L 408 954
+    C 440 720 468 520 492 372
+    C 516 520 544 720 576 954
+    L 726 914
+    C 684 700 644 500 618 344
+    C 612 300 584 268 538 258
+    C 566 300 570 336 556 366
+    C 534 306 466 306 444 366
+    C 430 336 434 300 446 258
+    Z" fill="none" fill-rule="evenodd" stroke="#ded2c2"
+          stroke-opacity="0.26" stroke-width="2"/>
+    <path d="
+    M 446 258
+    C 400 268 372 300 366 344
+    C 340 500 300 700 258 914
+    L 408 954
+    C 440 720 468 520 492 372
+    C 516 520 544 720 576 954
+    L 726 914
+    C 684 700 644 500 618 344
+    C 612 300 584 268 538 258
+    C 566 300 570 336 556 366
+    C 534 306 466 306 444 366
+    C 430 336 434 300 446 258
+    Z" fill="none" fill-rule="evenodd" stroke="#000000"
+          stroke-opacity="0.4" stroke-width="1"/>
+    <g clip-path="url(#halo-silk-scarf-detail-clip)"><path d="M 492 372 C 478 560 444 780 408 944" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 492 372 C 478 560 444 780 408 944" fill="none" stroke="#ded2c2" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 266 928 C 263 966 270 980 267 988" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 584 928 C 581 966 588 980 585 988" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 279 928 C 276 970 283 984 280 992" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 597 928 C 594 970 601 984 598 992" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 292 928 C 289 974 296 988 293 996" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 610 928 C 607 974 614 988 611 996" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 305 928 C 302 978 309 992 306 1000" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 623 928 C 620 978 627 992 624 1000" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 318 928 C 315 982 322 996 319 1004" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 636 928 C 633 982 640 996 637 1004" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 331 928 C 328 986 335 1000 332 1008" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 649 928 C 646 986 653 1000 650 1008" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 344 928 C 341 990 348 1004 345 1012" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 662 928 C 659 990 666 1004 663 1012" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 357 928 C 354 994 361 1008 358 1016" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 675 928 C 672 994 679 1008 676 1016" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 370 928 C 367 998 374 1012 371 1020" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 688 928 C 685 998 692 1012 689 1020" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 383 928 C 380 966 387 980 384 988" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 701 928 C 698 966 705 980 702 988" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 396 928 C 393 970 400 984 397 992" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 714 928 C 711 970 718 984 715 992" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/></g>
+  </g>
+  <filter id="halo-silk-scarf-detail-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1000" height="1250" filter="url(#halo-silk-scarf-detail-grain)" opacity="0.075" style="mix-blend-mode:overlay"/>
+</svg>

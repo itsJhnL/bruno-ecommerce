@@ -1,0 +1,654 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   BRUNO — Liquid Glass Design System
+   Normative reference: Design.md. Do not add a token here without adding it
+   there, and do not use a raw hex value in a component.
+
+   Two themes. Dark is the brand's ground — glass only reads as glass against
+   something dark. Light is not an inversion: it is frosted porcelain over warm
+   bone, where shadow does the work the specular edge does in dark.
+
+   Components reference SEMANTIC tokens (canvas / ink / accent), never the raw
+   ramps below them. That is what makes a theme a token swap rather than a
+   rewrite.
+   ========================================================================== */
+
+/* Dark variant keys off data-theme, which the inline script in app/layout.tsx
+   stamps on <html> before first paint. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+@custom-variant light (&:where([data-theme="light"], [data-theme="light"] *));
+
+@theme {
+  /* --- Raw ramps. Reference material for the image generator and gradients;
+         components use the semantic tokens below. ---------------------------- */
+  --color-obsidian-950: #08070a;
+  --color-obsidian-900: #0d0c11;
+  --color-obsidian-850: #131218;
+  --color-obsidian-800: #1b1922;
+  --color-obsidian-700: #262331;
+
+  --color-champagne-100: #f6ebd8;
+  --color-champagne-200: #eddcbd;
+  --color-champagne-300: #e3cba0;
+  --color-champagne-400: #d6ba85;
+  --color-champagne-500: #c9a96a;
+  --color-champagne-600: #b0904f;
+  --color-champagne-700: #9a7c42;
+  --color-champagne-800: #6d5730;
+  --color-champagne-900: #4a3a1e;
+
+  /* --- Semantic: surfaces ----------------------------------------------- */
+  --color-canvas: #08070a;         /* page ground */
+  --color-canvas-raised: #131218;  /* inputs, selects, raised blocks */
+  --color-canvas-overlay: #1b1922; /* sheets, tooltips, popovers — opaque */
+
+  /* Scrims sit over product imagery, which is dark in BOTH themes.
+     They must not flip, or captions become unreadable on light. */
+  --color-scrim: #08070a;
+
+  /* --- Semantic: ink ------------------------------------------------------ */
+  --color-ink-primary: #f4f2ee;    /* 17.9:1 on canvas */
+  --color-ink-secondary: #b6b2ab;  /*  9.5:1 */
+  --color-ink-tertiary: #7e7a74;   /*  4.7:1 — the floor for readable text */
+  --color-ink-muted: #5a5751;      /* decorative only, never body copy */
+  --color-ink-inverse: #14100a;    /* on accent-solid — 8.3:1, both themes */
+  --color-ink-on-scrim: #f4f2ee;   /* captions over imagery, both themes */
+  --color-accent-on-scrim: #e3cba0;/* accent over imagery, both themes */
+
+  /* --- Semantic: accent. One accent. Never two. --------------------------- */
+  --color-accent: #e3cba0;         /* 12.7:1 — default accent text */
+  --color-accent-strong: #f6ebd8;  /* 17.0:1 — hover / emphasis */
+  --color-accent-quiet: #9a7c42;   /*  5.1:1 — eyebrows, small labels */
+  --color-accent-line: #c9a96a;    /*  9.0:1 — borders, rings, icon strokes */
+  --color-accent-solid: #c9a96a;   /* filled buttons — same in both themes */
+  --color-accent-solid-hover: #e3cba0;
+  --color-accent-wash: #4a3a1e;    /* tinted backgrounds */
+
+  /* --- Semantic: hairlines and tints ---------------------------------------
+     Every border and hover fill in the codebase resolves to one of these five.
+     Hardcoded white/NN was the single biggest thing standing between this
+     design and a working light theme: white at 12% is a hairline on obsidian
+     and invisible on bone. ------------------------------------------------ */
+  --color-hairline-faint: rgba(255, 255, 255, 0.07);
+  --color-hairline: rgba(255, 255, 255, 0.13);
+  --color-hairline-strong: rgba(255, 255, 255, 0.24);
+  --color-tint: rgba(255, 255, 255, 0.045);
+  --color-tint-strong: rgba(255, 255, 255, 0.085);
+
+  /* --- Semantic: signals -------------------------------------------------- */
+  --color-signal-success: #6fa383;
+  --color-signal-warning: #d9a441;
+  --color-signal-danger: #c4695e;
+  --color-signal-info: #7e96b8;
+
+  /* --- Type ---------------------------------------------------------------
+     Jost is a geometric sans in the Futura lineage: single-storey a, circular
+     bowls, very wide when tracked out. It replaces the serif because modern
+     luxury reads as restraint, not heritage. It needs MORE tracking than a
+     serif at small sizes and LESS at large ones. --------------------------- */
+  --font-display: var(--font-jost), "Futura", "Century Gothic", ui-sans-serif, sans-serif;
+  --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* --- Radius -------------------------------------------------------------- */
+  --radius-chip: 4px;
+  --radius-field: 12px;
+  --radius-card: 20px;
+  --radius-vitrine: 32px;
+
+  /* --- Motion --------------------------------------------------------------- */
+  --ease-glass: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* --- Layout --------------------------------------------------------------- */
+  --spacing-shell: 1280px;
+  --spacing-bleed: 1536px;
+}
+
+/* --------------------------------------------------------------------------
+   Glass geometry and the theme-dependent bits that are not colour utilities.
+   -------------------------------------------------------------------------- */
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --glass-tint: rgba(255, 255, 255, 0.045);
+  --glass-tint-strong: rgba(255, 255, 255, 0.075);
+  --glass-edge: rgba(255, 255, 255, 0.14);
+  --glass-edge-hover: rgba(255, 255, 255, 0.24);
+  --glass-edge-lit: rgba(255, 255, 255, 0.28);
+  --glass-body: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.07) 0%,
+    rgba(255, 255, 255, 0.025) 45%,
+    rgba(255, 255, 255, 0.012) 100%
+  );
+  --glass-shadow: 0 24px 80px -20px rgba(0, 0, 0, 0.7);
+  --glass-shadow-lift: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  --glass-saturate: 1.3;
+
+  --bloom: rgba(201, 169, 106, 0.14);
+
+  /* Solid fallbacks when backdrop-filter is unavailable. */
+  --fallback-veil: rgba(13, 12, 17, 0.96);
+  --fallback-pane: #16151c;
+  --fallback-vitrine: #1b1922;
+  --fallback-monolith: #1f1d28;
+
+  --page-wash:
+    radial-gradient(120% 80% at 12% -10%, rgba(201, 169, 106, 0.10), transparent 55%),
+    radial-gradient(90% 70% at 95% 8%, rgba(126, 150, 184, 0.055), transparent 60%),
+    radial-gradient(140% 100% at 50% 110%, rgba(201, 169, 106, 0.06), transparent 60%),
+    linear-gradient(178deg, #08070a 0%, #0d0c11 42%, #100e15 72%, #08070a 100%);
+  --grain-opacity: 0.035;
+  --grain-blend: overlay;
+
+  --editorial-hero: url("/images/editorial/hero.svg");
+  --editorial-membership: url("/images/editorial/membership.svg");
+  --editorial-opacity: 0.55;
+}
+
+/* --------------------------------------------------------------------------
+   Light. Frosted porcelain over warm bone.
+
+   The specular top edge that makes a pane read as glass on black is invisible
+   on cream, so in light the job passes to a real cast shadow and a hairline
+   ink border. Blur is reduced — heavy blur over a light ground reads as fog,
+   not glass.
+   -------------------------------------------------------------------------- */
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  --color-canvas: #f4f1ea;
+  --color-canvas-raised: #fbf9f5;
+  --color-canvas-overlay: #ffffff;
+  /* --color-scrim deliberately NOT overridden: imagery stays dark. */
+
+  --color-ink-primary: #14120e;   /* 16.6:1 */
+  --color-ink-secondary: #4a463e; /*  8.3:1 */
+  --color-ink-tertiary: #6e6960;  /*  4.8:1 */
+  --color-ink-muted: #928c82;     /* decorative only */
+
+  --color-accent: #7c5f2a;        /*  5.3:1 */
+  --color-accent-strong: #5a4318; /*  8.3:1 */
+  --color-accent-quiet: #856527;  /*  4.8:1 */
+  --color-accent-line: #9c7a34;   /*  3.6:1 — meets non-text minimum */
+  --color-accent-solid-hover: #b8974f;
+  --color-accent-wash: #efe4cd;
+
+  --color-signal-success: #3f7a57;
+  --color-signal-warning: #8a6410;
+  --color-signal-danger: #a33f34;
+  --color-signal-info: #3f5f86;
+
+  /* On dark, fills and borders both lighten. On light they diverge: fills
+     lighten toward porcelain, borders darken toward ink. Treating a light
+     theme as "the same tokens with less alpha" is what makes most light modes
+     look washed out. */
+  --color-hairline-faint: rgba(24, 20, 14, 0.09);
+  --color-hairline: rgba(24, 20, 14, 0.16);
+  --color-hairline-strong: rgba(24, 20, 14, 0.3);
+  --color-tint: rgba(255, 255, 255, 0.72);
+  --color-tint-strong: rgba(255, 255, 255, 0.95);
+
+  --glass-tint: rgba(255, 255, 255, 0.62);
+  --glass-tint-strong: rgba(255, 255, 255, 0.85);
+  --glass-edge: rgba(24, 20, 14, 0.10);
+  --glass-edge-hover: rgba(24, 20, 14, 0.18);
+  --glass-edge-lit: rgba(255, 255, 255, 0.9);
+  --glass-body: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.55) 48%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  --glass-shadow: 0 18px 50px -22px rgba(48, 38, 20, 0.3);
+  --glass-shadow-lift: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --glass-saturate: 1.08;
+
+  --bloom: rgba(201, 169, 106, 0.3);
+
+  --fallback-veil: rgba(250, 248, 243, 0.97);
+  --fallback-pane: #fbfaf7;
+  --fallback-vitrine: #fdfcfa;
+  --fallback-monolith: #ffffff;
+
+  --page-wash:
+    radial-gradient(120% 80% at 12% -10%, rgba(201, 169, 106, 0.16), transparent 55%),
+    radial-gradient(90% 70% at 95% 6%, rgba(126, 150, 184, 0.10), transparent 60%),
+    radial-gradient(140% 100% at 50% 112%, rgba(201, 169, 106, 0.12), transparent 62%),
+    linear-gradient(178deg, #faf8f3 0%, #f4f1ea 45%, #efe9df 100%);
+  --grain-opacity: 0.028;
+  --grain-blend: multiply;
+
+  --editorial-hero: url("/images/editorial/hero-light.svg");
+  --editorial-membership: url("/images/editorial/membership-light.svg");
+  --editorial-opacity: 0.7;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+@layer base {
+  * {
+    border-color: var(--glass-edge);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink-primary);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    /* Theme changes should feel like a light being turned, not a page reload. */
+    transition: background-color 260ms var(--ease-out-soft), color 260ms var(--ease-out-soft);
+  }
+
+  /* The page ground. Fixed, so it never repaints on scroll. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    background: var(--page-wash);
+  }
+
+  /* Film grain. Kills gradient banding and gives the whole page a texture that
+     separates "expensive" from "flat CSS gradient". */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: var(--grain-opacity);
+    mix-blend-mode: var(--grain-blend);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-accent-solid);
+    color: var(--color-ink-inverse);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-line);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  button, a, [role="button"], summary {
+    cursor: pointer;
+  }
+
+  button:disabled, [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+
+  input, textarea, select {
+    font: inherit;
+    color: inherit;
+  }
+
+  ::placeholder {
+    color: var(--color-ink-muted);
+  }
+
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* ==========================================================================
+   Layout primitives
+   ========================================================================== */
+
+@layer components {
+  .shell {
+    width: min(100% - 2rem, var(--spacing-shell));
+    margin-inline: auto;
+  }
+
+  @media (min-width: 768px) {
+    .shell { width: min(100% - 4rem, var(--spacing-shell)); }
+  }
+
+  .bleed {
+    width: min(100% - 2rem, var(--spacing-bleed));
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: 3.5rem;
+  }
+
+  @media (min-width: 768px)  { .section { padding-block: 5rem; } }
+  @media (min-width: 1024px) { .section { padding-block: 8rem; } }
+
+  /* ------------------------------------------------------------------ */
+  /* The four glass grades. Design.md §4. Do not invent a fifth.         */
+  /* ------------------------------------------------------------------ */
+
+  .glass-veil,
+  .glass-pane,
+  .glass-vitrine,
+  .glass-monolith {
+    position: relative;
+    isolation: isolate;
+    border: 1px solid var(--glass-edge);
+    background-image: var(--glass-body);
+    background-color: var(--glass-tint);
+    transition: background-color 260ms var(--ease-out-soft),
+                border-color 260ms var(--ease-out-soft);
+  }
+
+  /* The specular top edge. It is what separates glass from a translucent div
+     on dark; on light it is nearly invisible and the shadow carries the read. */
+  .glass-veil::before,
+  .glass-pane::before,
+  .glass-vitrine::before,
+  .glass-monolith::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--glass-edge-lit) 18%,
+      var(--glass-edge-lit) 52%,
+      transparent 88%
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .glass-veil {
+    backdrop-filter: blur(8px) saturate(var(--glass-saturate));
+    -webkit-backdrop-filter: blur(8px) saturate(var(--glass-saturate));
+    background-color: var(--fallback-veil);
+  }
+
+  .glass-pane {
+    backdrop-filter: blur(16px) saturate(var(--glass-saturate));
+    -webkit-backdrop-filter: blur(16px) saturate(var(--glass-saturate));
+    border-radius: var(--radius-card);
+    box-shadow: var(--glass-shadow), var(--glass-shadow-lift);
+  }
+
+  .glass-vitrine {
+    backdrop-filter: blur(28px) saturate(var(--glass-saturate));
+    -webkit-backdrop-filter: blur(28px) saturate(var(--glass-saturate));
+    border-radius: var(--radius-vitrine);
+    border-color: var(--glass-edge-hover);
+    background-color: var(--glass-tint-strong);
+    box-shadow: var(--glass-shadow), var(--glass-shadow-lift);
+  }
+
+  /* One monolith per page. It is the hero moment. */
+  .glass-monolith {
+    backdrop-filter: blur(40px) saturate(calc(var(--glass-saturate) + 0.1));
+    -webkit-backdrop-filter: blur(40px) saturate(calc(var(--glass-saturate) + 0.1));
+    border-radius: var(--radius-vitrine);
+    border-color: var(--glass-edge-hover);
+    background-color: var(--glass-tint-strong);
+    box-shadow: var(--glass-shadow), var(--glass-shadow-lift);
+  }
+
+  /* Prism edge — thick glass splits light. Monolith only. */
+  .glass-monolith::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      rgba(201, 169, 106, 0.34) 0%,
+      transparent 34%,
+      transparent 66%,
+      rgba(126, 150, 184, 0.24) 100%
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* Hover — light, never geometry. Design.md §7. */
+  .glass-interactive {
+    transition: background-color 240ms var(--ease-out-soft),
+                border-color 240ms var(--ease-out-soft),
+                box-shadow 240ms var(--ease-out-soft);
+  }
+
+  .glass-interactive:hover {
+    background-color: var(--glass-tint-strong);
+    border-color: var(--glass-edge-hover);
+  }
+
+  /* The page must be beautiful without backdrop-filter. */
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass-veil     { background-color: var(--fallback-veil); }
+    .glass-pane     { background-color: var(--fallback-pane); }
+    .glass-vitrine  { background-color: var(--fallback-vitrine); }
+    .glass-monolith { background-color: var(--fallback-monolith); }
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Typography — Jost, a geometric sans in the Futura lineage.         */
+  /*                                                                     */
+  /* Geometric sans behaves the opposite way to a serif across the       */
+  /* scale: it needs negative tracking as it grows (the circular bowls   */
+  /* open up), and generous positive tracking as it shrinks (or the      */
+  /* uniform stroke turns to mush). Weight comes down as size goes up.   */
+  /* ------------------------------------------------------------------ */
+
+  .display-xl {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: clamp(2.75rem, 6.6vw, 5.75rem);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+  }
+
+  .display-l {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: clamp(2rem, 4.4vw, 3.5rem);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+  }
+
+  .display-m {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: clamp(1.625rem, 3vw, 2.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+
+  .display-s {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(1.125rem, 1.7vw, 1.375rem);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  /* The wordmark. Futura-lineage caps want to be tracked out a long way. */
+  .wordmark {
+    font-family: var(--font-display);
+    font-weight: 300;
+    letter-spacing: 0.36em;
+    /* Tracking adds space after the last letter; pull it back so the mark
+       sits optically centred. */
+    text-indent: 0.36em;
+  }
+
+  .eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--color-accent-quiet);
+  }
+
+  /* Prices and figures: display face, light weight, tabular. */
+  .figure {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+
+  .lede {
+    font-size: clamp(1rem, 1.2vw, 1.125rem);
+    line-height: 1.7;
+    color: var(--color-ink-secondary);
+    max-width: 62ch;
+  }
+
+  .prose-house {
+    max-width: 68ch;
+    color: var(--color-ink-secondary);
+    line-height: 1.75;
+  }
+
+  .prose-house p + p { margin-top: 1.25rem; }
+  .prose-house strong { color: var(--color-ink-primary); font-weight: 600; }
+
+  /* A hairline rule that fades at both ends. */
+  .rule-fade {
+    height: 1px;
+    background: linear-gradient(
+      90deg, transparent, var(--glass-edge-hover) 22%, var(--glass-edge-hover) 78%, transparent
+    );
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Editorial backdrops — swapped per theme via a custom property so    */
+  /* only the active variant is ever downloaded.                          */
+  /* ------------------------------------------------------------------ */
+
+  .editorial-hero,
+  .editorial-membership {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: var(--editorial-opacity);
+  }
+
+  .editorial-hero { background-image: var(--editorial-hero); }
+  .editorial-membership { background-image: var(--editorial-membership); }
+
+  /* ------------------------------------------------------------------ */
+  /* Product plinth — the elliptical bloom a product sits on             */
+  /* ------------------------------------------------------------------ */
+
+  .plinth::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    width: 62%;
+    height: 14%;
+    transform: translateX(-50%);
+    background: radial-gradient(ellipse at center, var(--bloom), transparent 70%);
+    filter: blur(18px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Reveal on scroll — progressive enhancement                          */
+  /* ------------------------------------------------------------------ */
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 700ms var(--ease-glass), transform 700ms var(--ease-glass);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  .reveal.is-revealed {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* If JS never runs, nothing stays invisible. */
+  .no-js .reveal { opacity: 1; transform: none; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .scrollbar-none { scrollbar-width: none; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+
+  .rail-mask {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent);
+  }
+}
+
+/* ==========================================================================
+   Reduced motion. The page loses movement and nothing else.
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ==========================================================================
+   Forced colors — keep structure visible when the OS overrides our palette.
+   ========================================================================== */
+
+@media (forced-colors: active) {
+  .glass-veil,
+  .glass-pane,
+  .glass-vitrine,
+  .glass-monolith {
+    border: 1px solid CanvasText;
+    background: Canvas;
+    backdrop-filter: none;
+  }
+}
+
+@media print {
+  body::before, body::after { display: none; }
+  body { background: #fff; color: #000; }
+}

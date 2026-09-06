@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img">
+  <defs>
+    <linearGradient id="og-product-obsidian-cashmere-overcoat-ground" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="og-product-obsidian-cashmere-overcoat-bloom" cx="0.76" cy="0.14" r="0.72">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="og-product-obsidian-cashmere-overcoat-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="og-product-obsidian-cashmere-overcoat-cloth" x1="0" y1="0.06" x2="1" y2="0.96">
+         <stop offset="0%"   stop-color="#c9b28d" stop-opacity="0.38"/>
+         <stop offset="20%"  stop-color="#4c3c2b"/>
+         <stop offset="64%"  stop-color="#4c3c2b"/>
+         <stop offset="100%" stop-color="#1a160f"/>
+       </linearGradient>
+       <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+         <stop offset="0%"   stop-color="#eddcbd"/>
+         <stop offset="42%"  stop-color="#c9a96a"/>
+         <stop offset="100%" stop-color="#9a7c42"/>
+       </linearGradient>
+       <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+         <stop offset="0%"   stop-color="#c9b28d" stop-opacity="0.85"/>
+         <stop offset="55%"  stop-color="#1a160f"/>
+         <stop offset="100%" stop-color="#000000"/>
+       </radialGradient>
+       <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+         <stop offset="0%"   stop-color="#a8783f"/>
+         <stop offset="50%"  stop-color="#432c17"/>
+         <stop offset="100%" stop-color="#150e09"/>
+       </linearGradient>
+       <pattern id="og-product-obsidian-cashmere-overcoat-weave" width="35" height="35" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+        <line x1="0" y1="7"     x2="35" y2="9.8" stroke="#c9b28d" stroke-opacity="0.11" stroke-width="2.38"/>
+        <line x1="0" y1="18.2" x2="35" y2="15.4" stroke="#000000" stroke-opacity="0.14" stroke-width="3.5"/>
+        <line x1="0" y1="28" x2="35" y2="30.8" stroke="#c9b28d" stroke-opacity="0.08" stroke-width="1.96"/>
+      </pattern>
+    <clipPath id="og-product-obsidian-cashmere-overcoat-clip"><path d="
+    M 264 252
+    L 448 262
+    C 470 302 530 302 552 262
+    L 736 252
+    C 794 302 806 522 796 752
+    L 704 766
+    C 694 562 666 488 622 472
+    C 634 700 642 900 648 1112
+    C 562 1134 438 1134 352 1112
+    C 358 900 366 700 378 472
+    C 334 488 306 562 296 766
+    L 204 752
+    C 194 522 206 302 264 252
+    Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og-product-obsidian-cashmere-overcoat-ground)"/>
+  <rect width="1200" height="630" fill="url(#og-product-obsidian-cashmere-overcoat-bloom)"/>
+  <g transform="translate(808 8) scale(0.49)">
+          <ellipse cx="500" cy="1126" rx="210" ry="26"
+                   fill="url(#og-product-obsidian-cashmere-overcoat-contact)"/>
+          <g clip-path="url(#og-product-obsidian-cashmere-overcoat-clip)">
+            <rect width="1000" height="1250" fill="url(#og-product-obsidian-cashmere-overcoat-cloth)"/>
+            <rect width="1000" height="1250" fill="url(#og-product-obsidian-cashmere-overcoat-weave)"/>
+            <path d="
+    M 434 292 C 470 272 530 272 566 292
+    L 620 316 C 636 284 618 256 578 246
+    C 530 236 470 236 422 246
+    C 382 256 364 284 380 316
+    Z" fill="#000000" fill-opacity="0.46" fill-rule="evenodd"/><path d="
+    M 500 616
+    C 522 500 546 390 566 292
+    L 434 292
+    C 454 390 478 500 500 616
+    Z" fill="#000000" fill-opacity="0.74" fill-rule="evenodd"/><path d="
+    M 500 616
+    C 522 500 546 390 566 292
+    L 620 316 L 596 372 L 626 430
+    C 588 500 542 566 500 616
+    Z" fill="#c9b28d" fill-opacity="0.15" fill-rule="evenodd"/><path d="
+    M 500 616
+    C 478 500 454 390 434 292
+    L 380 316 L 404 372 L 374 430
+    C 412 500 458 566 500 616
+    Z" fill="#c9b28d" fill-opacity="0.15" fill-rule="evenodd"/><path d="M 366 830 L 468 824 L 468 854 L 366 860 Z" fill="#000000" fill-opacity="0.5" fill-rule="evenodd"/><path d="M 532 824 L 634 830 L 634 860 L 532 854 Z" fill="#000000" fill-opacity="0.5" fill-rule="evenodd"/><path d="M 566 486 L 622 492 L 622 508 L 566 502 Z" fill="#000000" fill-opacity="0.45" fill-rule="evenodd"/>
+          </g>
+          <path d="
+    M 264 252
+    L 448 262
+    C 470 302 530 302 552 262
+    L 736 252
+    C 794 302 806 522 796 752
+    L 704 766
+    C 694 562 666 488 622 472
+    C 634 700 642 900 648 1112
+    C 562 1134 438 1134 352 1112
+    C 358 900 366 700 378 472
+    C 334 488 306 562 296 766
+    L 204 752
+    C 194 522 206 302 264 252
+    Z" fill="none" fill-rule="evenodd" stroke="#c9b28d"
+                stroke-opacity="0.24" stroke-width="2.4"/>
+          <g clip-path="url(#og-product-obsidian-cashmere-overcoat-clip)">
+            <path d="M 500 616 C 542 566 588 500 626 430 L 596 372 L 620 316" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 500 616 C 458 566 412 500 374 430 L 404 372 L 380 316" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 500 616 C 522 500 546 390 566 292" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 500 616 C 478 500 454 390 434 292" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 566 292 L 620 316" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 434 292 L 380 316" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 500 616 C 490 780 484 950 482 1092" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 736 252 C 700 320 686 400 682 472" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 264 252 C 300 320 314 400 318 472" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 716 690 L 800 678" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 284 690 L 200 678" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/>
+          </g>
+          <g>
+    <circle cx="452" cy="567.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="452" cy="566" r="15" fill="url(#horn)"/>
+    <circle cx="452" cy="566" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="447.5" cy="561.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="456.5" cy="570.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 442.7 556.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="452" cy="679.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="452" cy="678" r="15" fill="url(#horn)"/>
+    <circle cx="452" cy="678" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="447.5" cy="673.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="456.5" cy="682.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 442.7 668.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="452" cy="791.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="452" cy="790" r="15" fill="url(#horn)"/>
+    <circle cx="452" cy="790" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="447.5" cy="785.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="456.5" cy="794.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 442.7 780.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="548" cy="567.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="548" cy="566" r="15" fill="url(#horn)"/>
+    <circle cx="548" cy="566" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="543.5" cy="561.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="552.5" cy="570.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 538.7 556.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="548" cy="679.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="548" cy="678" r="15" fill="url(#horn)"/>
+    <circle cx="548" cy="678" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="543.5" cy="673.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="552.5" cy="682.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 538.7 668.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="548" cy="791.5" r="15" fill="#000" fill-opacity="0.5"/>
+    <circle cx="548" cy="790" r="15" fill="url(#horn)"/>
+    <circle cx="548" cy="790" r="15" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="543.5" cy="785.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <circle cx="552.5" cy="794.5" r="2.4" fill="#000" fill-opacity="0.55"/>
+    <path d="M 538.7 780.7 a 13.2 13.2 0 0 1 13.5 -1.5"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+        </g>
+  <!-- Wordmark as outlines: the rasteriser's machine has no house font. -->
+  <g transform="translate(134.1 66) scale(0.3143)">
+          <path d="M 8 6 L 58 6 C 82 6 96 20 96 38 C 96 51 89 61 77 66 C 91 70 100 82 100 98 C 100 120 84 134 58 134 L 8 134 Z M 30 26 L 55 26 C 66 26 72 31 72 40 C 72 49 66 54 55 54 L 30 54 Z M 30 76 L 57 76 C 70 76 78 82 78 94 C 78 106 70 112 57 112 L 30 112 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(180.0 66) scale(0.3143)">
+          <path d="M 8 6 L 58 6 C 84 6 100 22 100 46 C 100 64 91 77 76 83 L 104 134 L 78 134 L 54 88 L 30 88 L 30 134 L 8 134 Z M 30 26 L 56 26 C 68 26 76 34 76 47 C 76 60 68 68 56 68 L 30 68 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(227.1 66) scale(0.3143)">
+          <path d="M 8 6 L 30 6 L 30 92 C 30 106 39 114 54 114 C 69 114 78 106 78 92 L 78 6 L 100 6 L 100 93 C 100 119 82 136 54 136 C 26 136 8 119 8 93 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(273.0 66) scale(0.3143)">
+          <path d="M 8 6 L 30 6 L 78 92 L 78 6 L 100 6 L 100 134 L 78 134 L 30 48 L 30 134 L 8 134 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(318.9 66) scale(0.3143)">
+          <path d="M 62 4 C 96 4 120 32 120 70 C 120 108 96 136 62 136 C 28 136 4 108 4 70 C 4 32 28 4 62 4 Z M 62 26 C 43 26 30 44 30 70 C 30 96 43 114 62 114 C 81 114 94 96 94 70 C 94 44 81 26 62 26 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g>
+  <line x1="96" y1="146" x2="396" y2="146" stroke="#9a7c42" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="96" y="176" font-size="15" font-weight="500" letter-spacing="6.6"
+        font-family="Helvetica, Arial, sans-serif" fill="#9a7c42">PREMIUM APPAREL</text>
+  <text x="96" y="292" font-size="18" font-weight="500" letter-spacing="5.2"
+        font-family="Helvetica, Arial, sans-serif" fill="#9a7c42">
+    THE COLLECTION
+  </text>
+  <text x="96" y="366" font-size="66" font-weight="300"
+               font-family="Futura, 'Century Gothic', 'Trebuchet MS', Helvetica, Arial, sans-serif"
+               letter-spacing="-1.4" fill="#f4f2ee">Obsidian Cashmere</text><text x="96" y="438.6" font-size="66" font-weight="300"
+               font-family="Futura, 'Century Gothic', 'Trebuchet MS', Helvetica, Arial, sans-serif"
+               letter-spacing="-1.4" fill="#f4f2ee">Overcoat</text>
+  <g transform="translate(1082 512) scale(0.14) translate(-16 4)">
+    <path d="M 150 104 L 286 104 C 344 104 382 136 382 182 C 382 214 364 236 336 246 C 370 256 394 284 394 320 C 394 368 352 400 292 400 L 150 400 Z M 206 150 L 280 150 C 306 150 322 162 322 182 C 322 202 306 214 280 214 L 206 214 Z M 206 266 L 286 266 C 316 266 336 280 336 304 C 336 328 316 342 286 342 L 206 342 Z" fill="#9a7c42" fill-rule="evenodd"/>
+  </g>
+  <filter id="og-product-obsidian-cashmere-overcoat-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1200" height="630" filter="url(#og-product-obsidian-cashmere-overcoat-grain)" opacity="0.055" style="mix-blend-mode:overlay"/>
+</svg>

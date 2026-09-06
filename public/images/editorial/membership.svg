@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="membership-ground" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="50%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="membership-l0" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.4"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="membership-l1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.42"/>
+      <stop offset="52%"  stop-color="#7e96b8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="membership-l2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.33"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="membership-l3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.32"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="membership-pane0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="48%"  stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#c9a96a" stop-opacity="0.13"/>
+    </linearGradient>
+    <linearGradient id="membership-pane1" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.15"/>
+      <stop offset="55%"  stop-color="#ffffff" stop-opacity="0.025"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="membership-cast" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16.8"
+        stdDeviation="19.6"
+        flood-color="#3a2f1c" flood-opacity="0"/>
+    </filter>
+    <linearGradient id="membership-sheen" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="36%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="membership-caustic" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#eddcbd" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#eddcbd" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="membership-vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#08070a" stop-opacity="0.34"/>
+      <stop offset="38%"  stop-color="#08070a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0.72"/>
+    </linearGradient>
+    <filter id="membership-blur"><feGaussianBlur stdDeviation="1.68"/></filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#membership-ground)"/>
+  <ellipse cx="350.03" cy="101.93" rx="404.64" ry="315.62" fill="url(#membership-l0)"/><ellipse cx="1096.73" cy="219.19" rx="416.47" ry="324.85" fill="url(#membership-l1)"/><ellipse cx="495.19" cy="673.95" rx="377.24" ry="294.25" fill="url(#membership-l2)"/><ellipse cx="1273.35" cy="735.3" rx="402.4" ry="313.87" fill="url(#membership-l3)"/>
+  <g filter="url(#membership-cast)"><g filter="url(#membership-blur)"><g transform="rotate(0.41 389.85 488.22)">
+      <rect x="164.42" y="147.39" width="450.85" height="681.66" rx="40.58"
+            fill="url(#membership-pane0)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="200.49" y="147.39" width="378.72" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="164.42" y="147.39" width="450.85" height="681.66" rx="40.58"
+            fill="url(#membership-sheen)" style="mix-blend-mode:screen"/>
+    </g><g transform="rotate(-2.74 625.37 501.91)">
+      <rect x="441.77" y="132.23" width="367.21" height="739.35" rx="33.05"
+            fill="url(#membership-pane1)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="471.14" y="132.23" width="308.45" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="441.77" y="132.23" width="367.21" height="739.35" rx="33.05"
+            fill="url(#membership-sheen)" style="mix-blend-mode:screen"/>
+    </g><g transform="rotate(-1.13 1007.55 407.09)">
+      <rect x="801.46" y="56.33" width="412.18" height="701.53" rx="37.1"
+            fill="url(#membership-pane0)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="834.44" y="56.33" width="346.23" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="801.46" y="56.33" width="412.18" height="701.53" rx="37.1"
+            fill="url(#membership-sheen)" style="mix-blend-mode:screen"/>
+    </g></g></g>
+  <ellipse cx="836.8" cy="167.53" rx="103.31" ry="53.53" fill="url(#membership-caustic)"/><ellipse cx="952.14" cy="161.5" rx="75.49" ry="50.96" fill="url(#membership-caustic)"/><ellipse cx="653.73" cy="751.56" rx="83.68" ry="62.31" fill="url(#membership-caustic)"/>
+  <g><path d="M -56 422.87 Q 700 584.88 1456 333.76"
+      fill="none" stroke="#c9a96a" stroke-opacity="0.09" stroke-width="1.24"/><path d="M -56 708.2 Q 700 632.94 1456 749.59"
+      fill="none" stroke="#7e96b8" stroke-opacity="0.1" stroke-width="2.09"/><path d="M -56 477.8 Q 700 516.48 1456 456.52"
+      fill="none" stroke="#c9a96a" stroke-opacity="0.2" stroke-width="0.78"/><path d="M -56 368.5 Q 700 545.86 1456 270.95"
+      fill="none" stroke="#7e96b8" stroke-opacity="0.19" stroke-width="1.37"/><path d="M -56 695.87 Q 700 859.88 1456 605.66"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.19" stroke-width="2.16"/><path d="M -56 667.29 Q 700 577.66 1456 716.58"
+      fill="none" stroke="#c9a96a" stroke-opacity="0.19" stroke-width="1.93"/><path d="M -56 348.35 Q 700 274.02 1456 389.23"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.08" stroke-width="1.85"/></g>
+  <rect width="1400" height="900" fill="url(#membership-vignette)"/>
+  <rect x="18" y="18" width="1364" height="864" fill="none"
+        stroke="#e3cba0" stroke-opacity="0.08" stroke-width="1"/>
+  <filter id="membership-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1400" height="900" filter="url(#membership-grain)" opacity="0.08" style="mix-blend-mode:overlay"/>
+  <text x="700" y="846" font-family="Cormorant Garamond, Georgia, serif" font-size="45"
+    font-weight="300" fill="#e3cba0" fill-opacity="0.2" text-anchor="middle"
+    dominant-baseline="central" letter-spacing="0.04em">B</text>
+</svg>

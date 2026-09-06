@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img">
+  <defs>
+    <linearGradient id="og-category-shirting-ground" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="og-category-shirting-bloom" cx="0.76" cy="0.14" r="0.72">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="og-category-shirting-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="og-category-shirting-cloth" x1="0" y1="0.06" x2="1" y2="0.96">
+         <stop offset="0%"   stop-color="#d2d6db" stop-opacity="0.38"/>
+         <stop offset="20%"  stop-color="#464b53"/>
+         <stop offset="64%"  stop-color="#464b53"/>
+         <stop offset="100%" stop-color="#14161a"/>
+       </linearGradient>
+       <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+         <stop offset="0%"   stop-color="#eddcbd"/>
+         <stop offset="42%"  stop-color="#c9a96a"/>
+         <stop offset="100%" stop-color="#9a7c42"/>
+       </linearGradient>
+       <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+         <stop offset="0%"   stop-color="#d2d6db" stop-opacity="0.85"/>
+         <stop offset="55%"  stop-color="#14161a"/>
+         <stop offset="100%" stop-color="#000000"/>
+       </radialGradient>
+       <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+         <stop offset="0%"   stop-color="#a8783f"/>
+         <stop offset="50%"  stop-color="#432c17"/>
+         <stop offset="100%" stop-color="#150e09"/>
+       </linearGradient>
+       <pattern id="og-category-shirting-weave" width="5" height="5" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="0" x2="0" y2="5" stroke="#d2d6db" stroke-opacity="0.15" stroke-width="1.5"/>
+        <line x1="0" y1="0" x2="5" y2="0" stroke="#000000" stroke-opacity="0.13" stroke-width="1.1"/>
+      </pattern>
+    <clipPath id="og-category-shirting-clip"><path d="
+    M 294 300
+    L 446 308
+    C 470 356 530 356 554 308
+    L 706 300
+    C 768 346 796 524 798 700
+    L 708 716
+    C 702 564 672 492 604 476
+    C 610 642 614 796 616 878
+    C 578 918 540 928 500 928
+    C 460 928 422 918 384 878
+    C 386 796 390 642 396 476
+    C 328 492 298 564 292 716
+    L 202 700
+    C 204 524 232 346 294 300
+    Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og-category-shirting-ground)"/>
+  <rect width="1200" height="630" fill="url(#og-category-shirting-bloom)"/>
+  <g transform="translate(808 8) scale(0.49)">
+          <ellipse cx="500" cy="944" rx="180" ry="22"
+                   fill="url(#og-category-shirting-contact)"/>
+          <g clip-path="url(#og-category-shirting-clip)">
+            <rect width="1000" height="1250" fill="url(#og-category-shirting-cloth)"/>
+            <rect width="1000" height="1250" fill="url(#og-category-shirting-weave)"/>
+            <path d="M 446 308 C 470 282 530 282 554 308 C 530 298 470 298 446 308 Z" fill="#000000" fill-opacity="0.5" fill-rule="evenodd"/><path d="M 500 296 L 556 306 C 588 318 604 344 606 372 L 552 348 L 512 322 Z" fill="#d2d6db" fill-opacity="0.14" fill-rule="evenodd"/><path d="M 500 296 L 444 306 C 412 318 396 344 394 372 L 448 348 L 488 322 Z" fill="#000000" fill-opacity="0.28" fill-rule="evenodd"/><path d="M 478 320 C 476 500 476 700 478 892 L 522 892 C 524 700 524 500 522 320 Z" fill="#d2d6db" fill-opacity="0.12" fill-rule="evenodd"/><path d="M 556 480 L 620 486 L 618 528 L 554 522 Z" fill="#000000" fill-opacity="0.3" fill-rule="evenodd"/><path d="M 706 660 L 798 646 L 800 700 L 708 716 Z" fill="#000000" fill-opacity="0.34" fill-rule="evenodd"/><path d="M 294 660 L 202 646 L 200 700 L 292 716 Z" fill="#000000" fill-opacity="0.34" fill-rule="evenodd"/>
+          </g>
+          <path d="
+    M 294 300
+    L 446 308
+    C 470 356 530 356 554 308
+    L 706 300
+    C 768 346 796 524 798 700
+    L 708 716
+    C 702 564 672 492 604 476
+    C 610 642 614 796 616 878
+    C 578 918 540 928 500 928
+    C 460 928 422 918 384 878
+    C 386 796 390 642 396 476
+    C 328 492 298 564 292 716
+    L 202 700
+    C 204 524 232 346 294 300
+    Z" fill="none" fill-rule="evenodd" stroke="#d2d6db"
+                stroke-opacity="0.24" stroke-width="2.4"/>
+          <g clip-path="url(#og-category-shirting-clip)">
+            <path d="M 672 300 C 640 372 620 428 614 478" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 328 300 C 360 372 380 428 386 478" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/><path d="M 300 396 C 400 366 600 366 700 396" fill="none" stroke="#000000" stroke-opacity="0.42"
+                         stroke-width="3.4" stroke-linecap="round"/>
+          </g>
+          <g>
+    <circle cx="500" cy="397.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="396" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="396" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="392.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="399.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 389.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="500" cy="501.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="500" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="500" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="496.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="503.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 493.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="500" cy="605.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="604" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="604" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="600.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="607.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 597.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="500" cy="709.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="708" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="708" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="704.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="711.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 701.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="500" cy="813.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="812" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="812" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="808.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="815.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 805.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="752" cy="675.5" r="9" fill="#000" fill-opacity="0.5"/>
+    <circle cx="752" cy="674" r="9" fill="url(#horn)"/>
+    <circle cx="752" cy="674" r="9" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="749.3" cy="671.3" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <circle cx="754.7" cy="676.7" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <path d="M 746.42 668.42 a 7.92 7.92 0 0 1 8.1 -0.9"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.44" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="248" cy="675.5" r="9" fill="#000" fill-opacity="0.5"/>
+    <circle cx="248" cy="674" r="9" fill="url(#horn)"/>
+    <circle cx="248" cy="674" r="9" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="245.3" cy="671.3" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <circle cx="250.7" cy="676.7" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <path d="M 242.42 668.42 a 7.92 7.92 0 0 1 8.1 -0.9"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.44" stroke-linecap="round"/>
+  </g>
+        </g>
+  <!-- Wordmark as outlines: the rasteriser's machine has no house font. -->
+  <g transform="translate(134.1 66) scale(0.3143)">
+          <path d="M 8 6 L 58 6 C 82 6 96 20 96 38 C 96 51 89 61 77 66 C 91 70 100 82 100 98 C 100 120 84 134 58 134 L 8 134 Z M 30 26 L 55 26 C 66 26 72 31 72 40 C 72 49 66 54 55 54 L 30 54 Z M 30 76 L 57 76 C 70 76 78 82 78 94 C 78 106 70 112 57 112 L 30 112 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(180.0 66) scale(0.3143)">
+          <path d="M 8 6 L 58 6 C 84 6 100 22 100 46 C 100 64 91 77 76 83 L 104 134 L 78 134 L 54 88 L 30 88 L 30 134 L 8 134 Z M 30 26 L 56 26 C 68 26 76 34 76 47 C 76 60 68 68 56 68 L 30 68 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(227.1 66) scale(0.3143)">
+          <path d="M 8 6 L 30 6 L 30 92 C 30 106 39 114 54 114 C 69 114 78 106 78 92 L 78 6 L 100 6 L 100 93 C 100 119 82 136 54 136 C 26 136 8 119 8 93 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(273.0 66) scale(0.3143)">
+          <path d="M 8 6 L 30 6 L 78 92 L 78 6 L 100 6 L 100 134 L 78 134 L 30 48 L 30 134 L 8 134 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g><g transform="translate(318.9 66) scale(0.3143)">
+          <path d="M 62 4 C 96 4 120 32 120 70 C 120 108 96 136 62 136 C 28 136 4 108 4 70 C 4 32 28 4 62 4 Z M 62 26 C 43 26 30 44 30 70 C 30 96 43 114 62 114 C 81 114 94 96 94 70 C 94 44 81 26 62 26 Z" fill="#e3cba0" fill-rule="evenodd"/>
+        </g>
+  <line x1="96" y1="146" x2="396" y2="146" stroke="#9a7c42" stroke-opacity="0.55" stroke-width="1"/>
+  <text x="96" y="176" font-size="15" font-weight="500" letter-spacing="6.6"
+        font-family="Helvetica, Arial, sans-serif" fill="#9a7c42">PREMIUM APPAREL</text>
+  <text x="96" y="292" font-size="18" font-weight="500" letter-spacing="5.2"
+        font-family="Helvetica, Arial, sans-serif" fill="#9a7c42">
+    BY CATEGORY
+  </text>
+  <text x="96" y="366" font-size="66" font-weight="300"
+               font-family="Futura, 'Century Gothic', 'Trebuchet MS', Helvetica, Arial, sans-serif"
+               letter-spacing="-1.4" fill="#f4f2ee">Shirting</text>
+  <g transform="translate(1082 512) scale(0.14) translate(-16 4)">
+    <path d="M 150 104 L 286 104 C 344 104 382 136 382 182 C 382 214 364 236 336 246 C 370 256 394 284 394 320 C 394 368 352 400 292 400 L 150 400 Z M 206 150 L 280 150 C 306 150 322 162 322 182 C 322 202 306 214 280 214 L 206 214 Z M 206 266 L 286 266 C 316 266 336 280 336 304 C 336 328 316 342 286 342 L 206 342 Z" fill="#9a7c42" fill-rule="evenodd"/>
+  </g>
+  <filter id="og-category-shirting-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1200" height="630" filter="url(#og-category-shirting-grain)" opacity="0.055" style="mix-blend-mode:overlay"/>
+</svg>

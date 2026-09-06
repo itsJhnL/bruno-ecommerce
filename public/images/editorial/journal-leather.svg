@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="journal-leather-ground" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="50%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="journal-leather-l0" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.29"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="journal-leather-l1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.19"/>
+      <stop offset="52%"  stop-color="#7e96b8" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="journal-leather-l2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.23"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient><radialGradient id="journal-leather-l3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.18"/>
+      <stop offset="52%"  stop-color="#9a7c42" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="journal-leather-pane0" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="48%"  stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#c9a96a" stop-opacity="0.13"/>
+    </linearGradient>
+    <linearGradient id="journal-leather-pane1" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.15"/>
+      <stop offset="55%"  stop-color="#ffffff" stop-opacity="0.025"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="journal-leather-cast" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16.8"
+        stdDeviation="19.6"
+        flood-color="#3a2f1c" flood-opacity="0"/>
+    </filter>
+    <linearGradient id="journal-leather-sheen" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="36%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="journal-leather-caustic" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#eddcbd" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#eddcbd" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="journal-leather-vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#08070a" stop-opacity="0.34"/>
+      <stop offset="38%"  stop-color="#08070a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#08070a" stop-opacity="0.72"/>
+    </linearGradient>
+    <filter id="journal-leather-blur"><feGaussianBlur stdDeviation="1.68"/></filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#journal-leather-ground)"/>
+  <ellipse cx="240.2" cy="162.17" rx="352.07" ry="274.61" fill="url(#journal-leather-l0)"/><ellipse cx="1113.4" cy="144.74" rx="411.03" ry="320.6" fill="url(#journal-leather-l1)"/><ellipse cx="457.15" cy="752.96" rx="366.01" ry="285.49" fill="url(#journal-leather-l2)"/><ellipse cx="1162.81" cy="609.48" rx="366.83" ry="286.13" fill="url(#journal-leather-l3)"/>
+  <g filter="url(#journal-leather-cast)"><g filter="url(#journal-leather-blur)"><g transform="rotate(4.46 329.59 385.8)">
+      <rect x="109.23" y="171.49" width="440.72" height="428.62" rx="38.58"
+            fill="url(#journal-leather-pane0)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="144.49" y="171.49" width="370.21" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="109.23" y="171.49" width="440.72" height="428.62" rx="38.58"
+            fill="url(#journal-leather-sheen)" style="mix-blend-mode:screen"/>
+    </g><g transform="rotate(-5.92 627.89 391.85)">
+      <rect x="459.99" y="134.25" width="335.8" height="515.21" rx="30.22"
+            fill="url(#journal-leather-pane1)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="486.86" y="134.25" width="282.07" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="459.99" y="134.25" width="335.8" height="515.21" rx="30.22"
+            fill="url(#journal-leather-sheen)" style="mix-blend-mode:screen"/>
+    </g><g transform="rotate(-1.59 976.7 301.42)">
+      <rect x="779.45" y="85.53" width="394.48" height="431.77" rx="35.5"
+            fill="url(#journal-leather-pane0)" stroke="#ffffff" stroke-opacity="0.26" stroke-width="1.3"/>
+      <rect x="811.01" y="85.53" width="331.36" height="1.6" rx="1"
+            fill="#eddcbd" fill-opacity="0.3"/>
+      <rect x="779.45" y="85.53" width="394.48" height="431.77" rx="35.5"
+            fill="url(#journal-leather-sheen)" style="mix-blend-mode:screen"/>
+    </g></g></g>
+  <ellipse cx="601.98" cy="218.97" rx="103.1" ry="41.4" fill="url(#journal-leather-caustic)"/><ellipse cx="751.5" cy="542.06" rx="103.83" ry="45.31" fill="url(#journal-leather-caustic)"/><ellipse cx="1155.67" cy="376.33" rx="85.11" ry="44.75" fill="url(#journal-leather-caustic)"/>
+  <g><path d="M -56 712.41 Q 700 673.6 1456 733.75"
+      fill="none" stroke="#7e96b8" stroke-opacity="0.15" stroke-width="1.66"/><path d="M -56 367.13 Q 700 347.91 1456 377.69"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.12" stroke-width="1.2"/><path d="M -56 623.42 Q 700 761.63 1456 547.4"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.13" stroke-width="1.24"/><path d="M -56 336.82 Q 700 289.37 1456 362.92"
+      fill="none" stroke="#c9a96a" stroke-opacity="0.12" stroke-width="1.42"/><path d="M -56 144.45 Q 700 253.16 1456 84.65"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.19" stroke-width="0.83"/><path d="M -56 468.37 Q 700 389.21 1456 511.9"
+      fill="none" stroke="#e3cba0" stroke-opacity="0.17" stroke-width="2.03"/><path d="M -56 778.84 Q 700 922.18 1456 700"
+      fill="none" stroke="#7e96b8" stroke-opacity="0.08" stroke-width="1.34"/></g>
+  <rect width="1400" height="900" fill="url(#journal-leather-vignette)"/>
+  <rect x="18" y="18" width="1364" height="864" fill="none"
+        stroke="#e3cba0" stroke-opacity="0.08" stroke-width="1"/>
+  <filter id="journal-leather-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1400" height="900" filter="url(#journal-leather-grain)" opacity="0.08" style="mix-blend-mode:overlay"/>
+  <text x="700" y="846" font-family="Cormorant Garamond, Georgia, serif" font-size="45"
+    font-weight="300" fill="#e3cba0" fill-opacity="0.2" text-anchor="middle"
+    dominant-baseline="central" letter-spacing="0.04em">B</text>
+</svg>

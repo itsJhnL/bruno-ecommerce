@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sable-cashmere-wrap-material-ground" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="sable-cashmere-wrap-material-bloom" cx="0.78" cy="0.14" r="0.74">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.30"/>
+      <stop offset="44%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sable-cashmere-wrap-material-cool" cx="0.12" cy="0.86" r="0.62">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7e96b8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- The cloth: shadow to body to highlight, raked from the light side. -->
+    <linearGradient id="sable-cashmere-wrap-material-cloth" x1="1" y1="0.06" x2="0" y2="0.96">
+      <stop offset="0%"   stop-color="#c9b28d" stop-opacity="0.38"/>
+      <stop offset="20%"  stop-color="#4c3c2b"/>
+      <stop offset="64%"  stop-color="#4c3c2b"/>
+      <stop offset="100%" stop-color="#1a160f"/>
+    </linearGradient>
+    <!-- Specular band. Silk gets a hard one, suede almost none. -->
+    <linearGradient id="sable-cashmere-wrap-material-spec" x1="0.42" y1="0" x2="1.1" y2="0.72">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="44%"  stop-color="#eddcbd" stop-opacity="0.06"/>
+      <stop offset="53%"  stop-color="#ffffff" stop-opacity="0.09"/>
+      <stop offset="63%"  stop-color="#eddcbd" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Turns a flat fill into something with a near and a far edge. -->
+    <linearGradient id="sable-cashmere-wrap-material-round" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="66%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.1"/>
+    </linearGradient>
+    <radialGradient id="sable-cashmere-wrap-material-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Findings. Fixed ids: garments.ts refers to them by name. -->
+    <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#eddcbd"/>
+      <stop offset="42%"  stop-color="#c9a96a"/>
+      <stop offset="100%" stop-color="#9a7c42"/>
+    </linearGradient>
+    <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0%"   stop-color="#c9b28d" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#1a160f"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%"   stop-color="#a8783f"/>
+      <stop offset="50%"  stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#150e09"/>
+    </linearGradient>
+    <pattern id="sable-cashmere-wrap-material-weave" width="35" height="35" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+        <line x1="0" y1="7"     x2="35" y2="9.8" stroke="#c9b28d" stroke-opacity="0.11" stroke-width="2.38"/>
+        <line x1="0" y1="18.2" x2="35" y2="15.4" stroke="#000000" stroke-opacity="0.14" stroke-width="3.5"/>
+        <line x1="0" y1="28" x2="35" y2="30.8" stroke="#c9b28d" stroke-opacity="0.08" stroke-width="1.96"/>
+      </pattern>
+    <clipPath id="sable-cashmere-wrap-material-clip"><path d="
+    M 432 258
+    C 374 268 339 300 331 344
+    C 298 500 248 700 195 950
+    L 384 990
+    C 424 720 460 520 490 372
+    C 520 520 555 720 596 990
+    L 785 950
+    C 732 700 681 500 649 344
+    C 641 300 606 268 548 258
+    C 583 300 588 336 571 366
+    C 543 306 457 306 429 366
+    C 412 336 417 300 432 258
+    Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#sable-cashmere-wrap-material-ground)"/>
+  <rect width="1000" height="1250" fill="url(#sable-cashmere-wrap-material-bloom)"/>
+  <rect width="1000" height="1250" fill="url(#sable-cashmere-wrap-material-cool)"/>
+  <g >
+    <!-- Contact shadow. Without it the garment floats. -->
+    <ellipse cx="500" cy="1036" rx="240" ry="24"
+             fill="url(#sable-cashmere-wrap-material-contact)"/>
+    <!-- The garment. -->
+    <g clip-path="url(#sable-cashmere-wrap-material-clip)">
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#sable-cashmere-wrap-material-cloth)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#sable-cashmere-wrap-material-weave)"/>
+      <path d="M 257.81 200 C 237.81 560 261.39 820 263.18 1200
+                L 346.79 1200 C 345 820 321.42 560 341.42 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 388.79 200 C 368.79 560 417.95 820 432.53 1200
+                L 525.3 1200 C 510.72 820 461.56 560 481.56 200 Z"
+             fill="#c9b28d" fill-opacity="0.04"/><path d="M 608.66 200 C 588.66 560 604.58 820 602.54 1200
+                L 661.27 1200 C 663.31 820 647.4 560 667.4 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 754.61 200 C 734.61 560 775.3 820 785.65 1200
+                L 877 1200 C 866.66 820 825.96 560 845.96 200 Z"
+             fill="#000000" fill-opacity="0.15"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#sable-cashmere-wrap-material-spec)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#sable-cashmere-wrap-material-round)"/>
+      <path d="M 429 366 C 457 306 543 306 571 366
+            C 543 336 457 336 429 366 Z" fill="#000000" fill-opacity="0.55" fill-rule="evenodd"/><path d="M 490 372 C 520 520 555 720 596 990
+            L 785 950 C 732 700 681 500 649 344
+            C 641 300 606 268 548 258 C 583 300 588 336 571 366 Z" fill="#c9b28d" fill-opacity="0.1" fill-rule="evenodd"/>
+    </g>
+    <!-- Rim light along the lit edge, then the construction. -->
+    <path d="
+    M 432 258
+    C 374 268 339 300 331 344
+    C 298 500 248 700 195 950
+    L 384 990
+    C 424 720 460 520 490 372
+    C 520 520 555 720 596 990
+    L 785 950
+    C 732 700 681 500 649 344
+    C 641 300 606 268 548 258
+    C 583 300 588 336 571 366
+    C 543 306 457 306 429 366
+    C 412 336 417 300 432 258
+    Z" fill="none" fill-rule="evenodd" stroke="#c9b28d"
+          stroke-opacity="0.26" stroke-width="2"/>
+    <path d="
+    M 432 258
+    C 374 268 339 300 331 344
+    C 298 500 248 700 195 950
+    L 384 990
+    C 424 720 460 520 490 372
+    C 520 520 555 720 596 990
+    L 785 950
+    C 732 700 681 500 649 344
+    C 641 300 606 268 548 258
+    C 583 300 588 336 571 366
+    C 543 306 457 306 429 366
+    C 412 336 417 300 432 258
+    Z" fill="none" fill-rule="evenodd" stroke="#000000"
+          stroke-opacity="0.4" stroke-width="1"/>
+    <g clip-path="url(#sable-cashmere-wrap-material-clip)"><path d="M 490 372 C 472 560 429 780 384 980" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 490 372 C 472 560 429 780 384 980" fill="none" stroke="#c9b28d" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 205 964 C 202 1002 209 1016 206 1024" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 606 964 C 603 1002 610 1016 607 1024" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 222 964 C 219 1006 226 1020 223 1028" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 622 964 C 619 1006 626 1020 623 1028" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 238 964 C 235 1010 242 1024 239 1032" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 639 964 C 636 1010 643 1024 640 1032" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 254 964 C 251 1014 258 1028 255 1036" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 655 964 C 652 1014 659 1028 656 1036" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 271 964 C 268 1018 275 1032 272 1040" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 671 964 C 668 1018 675 1032 672 1040" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 287 964 C 284 1022 291 1036 288 1044" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 688 964 C 685 1022 692 1036 689 1044" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 303 964 C 300 1026 307 1040 304 1048" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 704 964 C 701 1026 708 1040 705 1048" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 320 964 C 317 1030 324 1044 321 1052" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 721 964 C 718 1030 725 1044 722 1052" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 336 964 C 333 1034 340 1048 337 1056" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 737 964 C 734 1034 741 1048 738 1056" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 353 964 C 350 1002 357 1016 354 1024" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 753 964 C 750 1002 757 1016 754 1024" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 369 964 C 366 1006 373 1020 370 1028" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 770 964 C 767 1006 774 1020 771 1028" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/></g>
+  </g>
+  <filter id="sable-cashmere-wrap-material-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1000" height="1250" filter="url(#sable-cashmere-wrap-material-grain)" opacity="0.075" style="mix-blend-mode:overlay"/>
+  <text x="926" y="1198" font-family="Cormorant Garamond, Georgia, serif" font-size="22"
+    font-weight="300" fill="#e3cba0" fill-opacity="0.16" text-anchor="middle"
+    dominant-baseline="central" letter-spacing="0.04em">B</text>
+</svg>

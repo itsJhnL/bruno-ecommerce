@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="vellum-silk-shirt-detail-ground" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0%"   stop-color="#0d0c11"/>
+      <stop offset="55%"  stop-color="#131218"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <radialGradient id="vellum-silk-shirt-detail-bloom" cx="0.78" cy="0.14" r="0.74">
+      <stop offset="0%"   stop-color="#c9a96a" stop-opacity="0.30"/>
+      <stop offset="44%"  stop-color="#9a7c42" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#9a7c42" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vellum-silk-shirt-detail-cool" cx="0.12" cy="0.86" r="0.62">
+      <stop offset="0%"   stop-color="#7e96b8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7e96b8" stop-opacity="0"/>
+    </radialGradient>
+    <!-- The cloth: shadow to body to highlight, raked from the light side. -->
+    <linearGradient id="vellum-silk-shirt-detail-cloth" x1="1" y1="0.06" x2="0" y2="0.96">
+      <stop offset="0%"   stop-color="#ded2c2" stop-opacity="0.38"/>
+      <stop offset="20%"  stop-color="#544d5c"/>
+      <stop offset="64%"  stop-color="#544d5c"/>
+      <stop offset="100%" stop-color="#191720"/>
+    </linearGradient>
+    <!-- Specular band. Silk gets a hard one, suede almost none. -->
+    <linearGradient id="vellum-silk-shirt-detail-spec" x1="0.42" y1="0" x2="1.1" y2="0.72">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="44%"  stop-color="#eddcbd" stop-opacity="0.15"/>
+      <stop offset="53%"  stop-color="#ffffff" stop-opacity="0.23"/>
+      <stop offset="63%"  stop-color="#eddcbd" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Turns a flat fill into something with a near and a far edge. -->
+    <linearGradient id="vellum-silk-shirt-detail-round" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.5"/>
+      <stop offset="66%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.1"/>
+    </linearGradient>
+    <radialGradient id="vellum-silk-shirt-detail-contact" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Findings. Fixed ids: garments.ts refers to them by name. -->
+    <linearGradient id="brass" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#eddcbd"/>
+      <stop offset="42%"  stop-color="#c9a96a"/>
+      <stop offset="100%" stop-color="#9a7c42"/>
+    </linearGradient>
+    <radialGradient id="horn" cx="0.36" cy="0.3" r="0.8">
+      <stop offset="0%"   stop-color="#ded2c2" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#191720"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="leatherStrap" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%"   stop-color="#a8783f"/>
+      <stop offset="50%"  stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#150e09"/>
+    </linearGradient>
+    <pattern id="vellum-silk-shirt-detail-weave" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+        <line x1="0" y1="0" x2="0" y2="24" stroke="#ded2c2" stroke-opacity="0.10" stroke-width="3.2"/>
+        <line x1="12" y1="0" x2="12" y2="24" stroke="#000000" stroke-opacity="0.10" stroke-width="4.8"/>
+      </pattern>
+    <clipPath id="vellum-silk-shirt-detail-clip"><path d="
+    M 294 300
+    L 446 308
+    C 470 356 530 356 554 308
+    L 706 300
+    C 768 346 796 524 798 700
+    L 708 716
+    C 702 564 672 492 604 476
+    C 610 642 614 796 616 878
+    C 578 918 540 928 500 928
+    C 460 928 422 918 384 878
+    C 386 796 390 642 396 476
+    C 328 492 298 564 292 716
+    L 202 700
+    C 204 524 232 346 294 300
+    Z" clip-rule="evenodd"/></clipPath>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#vellum-silk-shirt-detail-ground)"/>
+  <rect width="1000" height="1250" fill="url(#vellum-silk-shirt-detail-bloom)"/>
+  <rect width="1000" height="1250" fill="url(#vellum-silk-shirt-detail-cool)"/>
+  <g transform="translate(-1340 -920) scale(3.33)">
+    <!-- Contact shadow. Without it the garment floats. -->
+    <ellipse cx="500" cy="944" rx="180" ry="22"
+             fill="url(#vellum-silk-shirt-detail-contact)"/>
+    <!-- The garment. -->
+    <g clip-path="url(#vellum-silk-shirt-detail-clip)">
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#vellum-silk-shirt-detail-cloth)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#vellum-silk-shirt-detail-weave)"/>
+      <path d="M 325.67 200 C 305.67 560 295.88 820 280.99 1200
+                L 369.08 1200 C 383.98 820 393.76 560 413.76 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 471.44 200 C 451.44 560 451.07 820 440.88 1200
+                L 521.66 1200 C 531.84 820 532.21 560 552.21 200 Z"
+             fill="#000000" fill-opacity="0.15"/><path d="M 760.46 200 C 740.46 560 782.87 820 794.07 1200
+                L 854.15 1200 C 842.95 820 800.54 560 820.54 200 Z"
+             fill="#000000" fill-opacity="0.15"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#vellum-silk-shirt-detail-spec)"/>
+      <rect x="0" y="0" width="1000" height="1250" fill="url(#vellum-silk-shirt-detail-round)"/>
+      <path d="M 446 308 C 470 282 530 282 554 308 C 530 298 470 298 446 308 Z" fill="#000000" fill-opacity="0.5" fill-rule="evenodd"/><path d="M 500 296 L 556 306 C 588 318 604 344 606 372 L 552 348 L 512 322 Z" fill="#ded2c2" fill-opacity="0.14" fill-rule="evenodd"/><path d="M 500 296 L 444 306 C 412 318 396 344 394 372 L 448 348 L 488 322 Z" fill="#000000" fill-opacity="0.28" fill-rule="evenodd"/><path d="M 478 320 C 476 500 476 700 478 892 L 522 892 C 524 700 524 500 522 320 Z" fill="#ded2c2" fill-opacity="0.12" fill-rule="evenodd"/><path d="M 556 480 L 620 486 L 618 528 L 554 522 Z" fill="#000000" fill-opacity="0.3" fill-rule="evenodd"/><path d="M 706 660 L 798 646 L 800 700 L 708 716 Z" fill="#000000" fill-opacity="0.34" fill-rule="evenodd"/><path d="M 294 660 L 202 646 L 200 700 L 292 716 Z" fill="#000000" fill-opacity="0.34" fill-rule="evenodd"/>
+    </g>
+    <!-- Rim light along the lit edge, then the construction. -->
+    <path d="
+    M 294 300
+    L 446 308
+    C 470 356 530 356 554 308
+    L 706 300
+    C 768 346 796 524 798 700
+    L 708 716
+    C 702 564 672 492 604 476
+    C 610 642 614 796 616 878
+    C 578 918 540 928 500 928
+    C 460 928 422 918 384 878
+    C 386 796 390 642 396 476
+    C 328 492 298 564 292 716
+    L 202 700
+    C 204 524 232 346 294 300
+    Z" fill="none" fill-rule="evenodd" stroke="#ded2c2"
+          stroke-opacity="0.26" stroke-width="2"/>
+    <path d="
+    M 294 300
+    L 446 308
+    C 470 356 530 356 554 308
+    L 706 300
+    C 768 346 796 524 798 700
+    L 708 716
+    C 702 564 672 492 604 476
+    C 610 642 614 796 616 878
+    C 578 918 540 928 500 928
+    C 460 928 422 918 384 878
+    C 386 796 390 642 396 476
+    C 328 492 298 564 292 716
+    L 202 700
+    C 204 524 232 346 294 300
+    Z" fill="none" fill-rule="evenodd" stroke="#000000"
+          stroke-opacity="0.4" stroke-width="1"/>
+    <g clip-path="url(#vellum-silk-shirt-detail-clip)"><path d="M 672 300 C 640 372 620 428 614 478" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 672 300 C 640 372 620 428 614 478" fill="none" stroke="#ded2c2" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 328 300 C 360 372 380 428 386 478" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 328 300 C 360 372 380 428 386 478" fill="none" stroke="#ded2c2" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 300 396 C 400 366 600 366 700 396" fill="none" stroke="#000000" stroke-opacity="0.42" stroke-width="3.4" stroke-linecap="round"/><path d="M 300 396 C 400 366 600 366 700 396" fill="none" stroke="#ded2c2" stroke-opacity="0.16" stroke-width="1.2"
+               transform="translate(0 -2.2)" stroke-linecap="round"/><path d="M 478 322 C 476 500 476 700 478 888" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 522 322 C 524 500 524 700 522 888" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 556 310 C 588 322 602 346 604 372" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/><path d="M 444 310 C 412 322 398 346 396 372" fill="none" stroke="#e3cba0" stroke-opacity="0.34" stroke-width="2.2"
+               stroke-dasharray="7 9" stroke-linecap="round"/></g>
+    <g>
+    <circle cx="500" cy="397.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="396" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="396" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="392.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="399.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 389.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="500" cy="501.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="500" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="500" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="496.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="503.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 493.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="500" cy="605.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="604" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="604" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="600.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="607.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 597.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="500" cy="709.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="708" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="708" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="704.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="711.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 701.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="500" cy="813.5" r="11" fill="#000" fill-opacity="0.5"/>
+    <circle cx="500" cy="812" r="11" fill="url(#horn)"/>
+    <circle cx="500" cy="812" r="11" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="496.7" cy="808.7" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <circle cx="503.3" cy="815.3" r="1.76" fill="#000" fill-opacity="0.55"/>
+    <path d="M 493.18 805.18 a 9.68 9.68 0 0 1 9.9 -1.1"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.76" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="752" cy="675.5" r="9" fill="#000" fill-opacity="0.5"/>
+    <circle cx="752" cy="674" r="9" fill="url(#horn)"/>
+    <circle cx="752" cy="674" r="9" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="749.3" cy="671.3" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <circle cx="754.7" cy="676.7" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <path d="M 746.42 668.42 a 7.92 7.92 0 0 1 8.1 -0.9"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.44" stroke-linecap="round"/>
+  </g><g>
+    <circle cx="248" cy="675.5" r="9" fill="#000" fill-opacity="0.5"/>
+    <circle cx="248" cy="674" r="9" fill="url(#horn)"/>
+    <circle cx="248" cy="674" r="9" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="1"/>
+    <circle cx="245.3" cy="671.3" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <circle cx="250.7" cy="676.7" r="1.44" fill="#000" fill-opacity="0.55"/>
+    <path d="M 242.42 668.42 a 7.92 7.92 0 0 1 8.1 -0.9"
+          fill="none" stroke="#fff" stroke-opacity="0.28" stroke-width="1.44" stroke-linecap="round"/>
+  </g>
+  </g>
+  <filter id="vellum-silk-shirt-detail-grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.52  0 0 0 0 0.47  0 0 0 0.6 0"/>
+  </filter>
+  <rect width="1000" height="1250" filter="url(#vellum-silk-shirt-detail-grain)" opacity="0.075" style="mix-blend-mode:overlay"/>
+</svg>
